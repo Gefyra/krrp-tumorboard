@@ -63,7 +63,7 @@ Usage: #example
   * family = "Musterfrau"
 * gender = #female
 * birthDate = "1965-04-03"
-* address
+* address[0]
   * line[0] = "Musterweg 22"
     * extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
     * extension.valueString = "Musterweg"

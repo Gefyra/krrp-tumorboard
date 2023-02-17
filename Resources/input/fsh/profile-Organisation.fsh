@@ -20,7 +20,7 @@ Instance: Organisation-example-1
 InstanceOf: Organisation
 Usage: #example
 * name = "Klinikum Musterhausen"
-* address
+* address[0]
   * line[0] = "Beispielpfad 5-9"
   * city = "Musterhausen"
   * postalCode = "12456"
