@@ -1,0 +1,24 @@
+{
+  "resourceType": "Practitioner",
+  "id": "Melder-example-1",
+  "meta": {
+    "profile": [
+      "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Melder"
+    ]
+  },
+  "name": [
+    {
+      "text": "Dr. Herbert Hundertschön"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "012233-555-667"
+    },
+    {
+      "system": "email",
+      "value": "hh@klinikum-musterhausen.de"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Melder",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Individuals"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "individual"
+    }
+  ],
+  "url": "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Melder",
+  "version": "0.0.1-work",
+  "name": "Melder",
+  "title": "Melder",
+  "status": "draft",
+  "experimental": true,
+  "date": "2023-02-17",
+  "publisher": "Krebsregister Rheinland-Pfalz gGmbH",
+  "contact": [
+    {
+      "name": "Krebsregister Rheinland-Pfalz gGmbH",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.krebsregister-rlp.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Meldende/anfragende ÄrztIn",
+  "copyright": "Copyright 2023 Krebsregister Rheinland-Pfalz gGmbH",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.id",
+        "path": "Practitioner.id",
+        "short": "eindeutige ID der Ressource auf dem Server",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "short": "vollständiger Name des Melders",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.text",
+        "path": "Practitioner.name.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom",
+        "path": "Practitioner.telecom",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom.system",
+        "path": "Practitioner.telecom.system",
+        "short": "Art des Telekommunikationssystems (Unterscheidungskriterium)",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom.value",
+        "path": "Practitioner.telecom.value",
+        "short": "Kontaktinformation (z.B. Telefonnummer, E-Mail-Adresse)",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}
