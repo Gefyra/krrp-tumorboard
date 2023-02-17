@@ -1,0 +1,19 @@
+{
+  "resourceType": "Organization",
+  "id": "Organisation-example-1",
+  "meta": {
+    "profile": [
+      "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Organisation"
+    ]
+  },
+  "name": "Klinikum Musterhausen",
+  "address": [
+    {
+      "line": [
+        "Beispielpfad 5-9"
+      ],
+      "city": "Musterhausen",
+      "postalCode": "12456"
+    }
+  ]
+}
