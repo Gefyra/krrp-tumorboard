@@ -1,0 +1,57 @@
+{
+  "resourceType": "Patient",
+  "id": "TumorPatient-example-1",
+  "meta": {
+    "profile": [
+      "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "GKV",
+            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
+          }
+        ]
+      },
+      "system": "http://fhir.de/sid/gkv/kvid-10",
+      "value": "A123456789"
+    }
+  ],
+  "name": [
+    {
+      "family": "Mustermann",
+      "given": [
+        "Martina"
+      ]
+    },
+    {
+      "use": "maiden",
+      "family": "Musterfrau"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1965-04-03",
+  "address": [
+    {
+      "line": [
+        "Musterweg 22"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "22"
+            }
+          ]
+        }
+      ],
+      "city": "Musterstadt",
+      "postalCode": "12345",
+      "country": "DE"
+    }
+  ]
+}
