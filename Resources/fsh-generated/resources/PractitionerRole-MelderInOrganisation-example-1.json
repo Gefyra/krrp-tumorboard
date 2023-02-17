@@ -1,0 +1,15 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "MelderInOrganisation-example-1",
+  "meta": {
+    "profile": [
+      "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/MelderInOrganisation"
+    ]
+  },
+  "practitioner": {
+    "reference": "Practitioner/Melder-example-1"
+  },
+  "organization": {
+    "reference": "Organization/Organisation-example-1"
+  }
+}

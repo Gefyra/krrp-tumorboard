@@ -1,0 +1,104 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "MelderInOrganisation",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Individuals"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "individual"
+    }
+  ],
+  "url": "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/MelderInOrganisation",
+  "version": "0.0.1-work",
+  "name": "MelderInOrganisation",
+  "title": "Melder in Organisation",
+  "status": "draft",
+  "experimental": true,
+  "date": "2023-02-17",
+  "publisher": "Krebsregister Rheinland-Pfalz gGmbH",
+  "contact": [
+    {
+      "name": "Krebsregister Rheinland-Pfalz gGmbH",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.krebsregister-rlp.de/",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Zuordnung des Melders zu einer Organisation",
+  "copyright": "Copyright 2023 Krebsregister Rheinland-Pfalz gGmbH",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.id",
+        "path": "PractitionerRole.id",
+        "short": "eindeutige ID der Ressource auf dem Server",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "short": "Referenz auf den Melder",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Melder"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "short": "Referenz auf die Organisation",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Organisation"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}
