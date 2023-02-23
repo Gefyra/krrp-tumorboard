@@ -20,13 +20,23 @@ Description: "Patienten-Stammdaten"
   * system MS
   * value MS
 * name MS
-* name.use MS
-  * ^short = "Verwendungszweck"
-  * ^definition = "Codiert die Art des Namens, z.B. zur Unterscheidung des Geburtsnamens"
-* name.family MS
-  * ^short = "Nachname"
-* name.given MS
-  * ^short = "Vorname"
+  * ^slicing.discriminator.type = #pattern
+  * ^slicing.discriminator.path = "$this"
+  * ^slicing.rules = #open
+* name contains Name 0..1 MS and Geburtsname 0..1 MS
+  * use MS
+    * ^short = "Verwendungszweck"
+    * ^definition = "Codiert die Art des Namens, z.B. zur Unterscheidung des Geburtsnamens"
+  * family MS
+    * ^short = "Nachname"
+  * given MS
+    * ^short = "Vorname"
+* name[Name]
+  * ^short = "Personenname"
+  * ^patternHumanName.use = #official
+* name[Geburtsname]
+  * ^short = "Geburtsname"
+  * ^patternHumanName.use = #maiden
 * gender MS
   * ^short = "Geschlecht"
 * birthDate MS
@@ -51,24 +61,19 @@ Description: "Patienten-Stammdaten"
 Instance: TumorPatient-example-1
 InstanceOf: TumorPatient
 Usage: #example
-* identifier
-  * type = $csIdentifierTypeDeBasis#GKV
-  * system = "http://fhir.de/sid/gkv/kvid-10"
+* identifier[krankenversichertennummer]
   * value = "A123456789"
-* name[0]
+* name[Name]
   * family = "Mustermann"
   * given = "Martina"
-* name[1]
-  * use = #maiden
+* name[Geburtsname]
   * family = "Musterfrau"
 * gender = #female
 * birthDate = "1965-04-03"
-* address[0]
-  * line[0] = "Musterweg 22"
-    * extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
-    * extension.valueString = "Musterweg"
-    * extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
-    * extension.valueString = "22"
+* address[+]
+  * line[+] = "Musterweg 22"
+    * extension[Strasse].valueString = "Musterweg"
+    * extension[Hausnummer].valueString = "22"
   * city = "Musterstadt"
   * postalCode = "12345"
   * country = "DE"
