@@ -22,6 +22,7 @@
   ],
   "name": [
     {
+      "use": "official",
       "family": "Mustermann",
       "given": [
         "Martina"
@@ -32,8 +33,6 @@
       "family": "Musterfrau"
     }
   ],
-  "gender": "female",
-  "birthDate": "1965-04-03",
   "address": [
     {
       "line": [
@@ -42,6 +41,10 @@
       "_line": [
         {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Musterweg"
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
               "valueString": "22"
@@ -53,5 +56,7 @@
       "postalCode": "12345",
       "country": "DE"
     }
-  ]
+  ],
+  "gender": "female",
+  "birthDate": "1965-04-03"
 }
