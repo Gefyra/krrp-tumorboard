@@ -1,0 +1,63 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CancerStagingTypeVS",
+  "id": "mcode-cancer-staging-type-vs",
+  "title": "Cancer Staging Type Value Set",
+  "description": "Identifying codes for the type of cancer staging performed. In terms of the SNOMED CT hierarchy, these codes represent observables.",
+  "version": "0.0.1-work",
+  "url": "https://krebsregister-rlp.de/fhir/tumorboard/ValueSet/mcode-cancer-staging-type-vs",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "371508000"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "385361009"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "405931009"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "409720004",
+            "display": "International neuroblastoma staging system stage (observable entity)"
+          },
+          {
+            "code": "385357003",
+            "display": "Dukes stage (observable entity)"
+          },
+          {
+            "code": "103420007",
+            "display": "Modified Dukes stage (observable entity)"
+          }
+        ]
+      }
+    ]
+  }
+}

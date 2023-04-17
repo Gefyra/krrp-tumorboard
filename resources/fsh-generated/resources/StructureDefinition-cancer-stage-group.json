@@ -1,0 +1,143 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "cancer-stage-group",
+  "url": "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/cancer-stage-group",
+  "version": "0.0.1-work",
+  "name": "CancerStageGroup",
+  "title": "Cancer Stage Group Profile",
+  "status": "active",
+  "description": "An assessment of the extent of the cancer in the body, according to a given cancer staging classification system. This profile can be used with any staging system, but it is specifically targeted for non-TNM staging systems, since specialized TNM staging profiles are provided.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "The type of stage information reported.",
+        "definition": "The type of staging performed, e.g., clinically by oncologist, by a pathologist on a specimen, or other method. This information is required, although it may be redundant with the stage code recorded in Observation.valueCodeableConcept (for example, the 'c' in cN0 represents clinical staging).",
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://krebsregister-rlp.de/fhir/tumorboard/ValueSet/mcode-cancer-staging-type-vs"
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "definition": "The patient associated with staging assessment.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.focus",
+        "path": "Observation.focus",
+        "short": "The cancer condition associated with staging assessment.",
+        "definition": "Staging is associated with a particular primary cancer condition. Observation.focus is used to point back to that condition.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Diagnose"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://krebsregister-rlp.de/fhir/tumorboard/ValueSet/mcode-cancer-stage-group-vs"
+        }
+      },
+      {
+        "id": "Observation.method",
+        "path": "Observation.method",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://krebsregister-rlp.de/fhir/tumorboard/ValueSet/mcode-cancer-staging-method-vs"
+        }
+      },
+      {
+        "id": "Observation.device",
+        "path": "Observation.device",
+        "short": "Wird in diesem Profil nicht genutzt",
+        "definition": "Wird nicht in diesem Profil genutzt"
+      },
+      {
+        "id": "Observation.referenceRange",
+        "path": "Observation.referenceRange",
+        "short": "Wird in diesem Profil nicht genutzt",
+        "definition": "Wird nicht in diesem Profil genutzt"
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "short": "Prognostic factors contributing to stage determination.",
+        "definition": "References to the prognostic factors affecting the stage, for example, the T, N, and M categories."
+      }
+    ]
+  }
+}

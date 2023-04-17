@@ -1,0 +1,155 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "tnm-stage-group",
+  "url": "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tnm-stage-group",
+  "version": "0.0.1-work",
+  "name": "TNMStageGroup",
+  "title": "TNM Stage Group Profile",
+  "status": "active",
+  "description": "The extent of cancer represented by the stage group, based on a TNM staging system.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/cancer-stage-group",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://krebsregister-rlp.de/fhir/tumorboard/ValueSet/mcode-tnm-stage-group-staging-type-vs"
+        }
+      },
+      {
+        "id": "Observation.focus",
+        "path": "Observation.focus",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "The stage group",
+        "definition": "The overall cancer stage, such as stage group IIA."
+      },
+      {
+        "id": "Observation.method",
+        "path": "Observation.method",
+        "min": 1
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "$this.resolve()"
+            }
+          ],
+          "rules": "open",
+          "description": "Slicing based on profile conformance of the referenced resource."
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember:tnmPrimaryTumorCategory",
+        "path": "Observation.hasMember",
+        "sliceName": "tnmPrimaryTumorCategory",
+        "short": "TNM Primary Tumor Category",
+        "definition": "Category of the primary tumor, based on its size and extent, and based on evidence such as physical examination, imaging, and/or biopsy.",
+        "comment": "When using this element, the Observation must validate against the specified profile.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/mcode-tnm-primary-tumor-category"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember:tnmRegionalNodesCategory",
+        "path": "Observation.hasMember",
+        "sliceName": "tnmRegionalNodesCategory",
+        "short": "TNM  Regional Nodes Category",
+        "definition": "Category of the presence or absence of metastases in regional lymph nodes, based on evidence such as physical examination, imaging, and/or biopsy.",
+        "comment": "When using this element, the Observation must validate against the specified profile.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/mcode-tnm-regional-nodes-category"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember:tnmDistantMetastasesCategory",
+        "path": "Observation.hasMember",
+        "sliceName": "tnmDistantMetastasesCategory",
+        "short": "TNM  Distant Metastases Category",
+        "definition": "Category describing the presence or absence of metastases in remote anatomical locations, based on evidence such as physical examination, imaging, and/or biopsy.",
+        "comment": "When using this element, the Observation must validate against the specified profile.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/mcode-tnm-distant-metastases-category"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "short": "Wird in diesem Profil nicht genutzt",
+        "definition": "Wird nicht in diesem Profil genutzt"
+      }
+    ]
+  }
+}
