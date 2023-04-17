@@ -1,4 +1,4 @@
-Profile: Diagnose
+Profile: KrebsDiagnose
 Parent: Condition
 Id: Diagnose
 Title: "Diagnose"

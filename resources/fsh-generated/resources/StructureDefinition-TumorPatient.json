@@ -1,16 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "TumorPatient",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Base.Individuals"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient",
   "version": "0.0.1-work",
   "name": "TumorPatient",
