@@ -125,6 +125,15 @@
       {
         "id": "Patient.name",
         "path": "Patient.name",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "mustSupport": true
       },
       {
@@ -144,6 +153,30 @@
         "id": "Patient.name.given",
         "path": "Patient.name.given",
         "short": "Vorname",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Name",
+        "path": "Patient.name",
+        "sliceName": "Name",
+        "short": "Personenname",
+        "min": 0,
+        "max": "1",
+        "patternHumanName": {
+          "use": "official"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:Geburtsname",
+        "path": "Patient.name",
+        "sliceName": "Geburtsname",
+        "short": "Geburtsname",
+        "min": 0,
+        "max": "1",
+        "patternHumanName": {
+          "use": "maiden"
+        },
         "mustSupport": true
       },
       {
