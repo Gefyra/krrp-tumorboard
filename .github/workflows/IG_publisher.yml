@@ -36,4 +36,3 @@ jobs:
           echo "Run the IG publisher..."
           ls -lahs resources
           java -jar ./input-cache/publisher.jar publisher -ig resources
-          unzip output/full-ig.zip -d upload/
