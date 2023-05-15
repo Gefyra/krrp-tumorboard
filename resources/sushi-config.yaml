@@ -2,13 +2,19 @@ canonical: https://krebsregister-rlp.de/fhir/tumorboard
 fhirVersion: 4.0.1
 FSHOnly: false
 applyExtensionMetadataToRoot: false
-id: Implementierungsleitfaden Tumorboard
-name: Implementierungsleitfaden Tumorboard
+id: de.krebsregister-rlp.tumorboard
+name: ImplementierungsleitfadenTumorboard
 status: draft
 version: 0.0.1-work
+copyrightYear: 2023+
+releaseLabel: ci-build
 publisher:
   name: Krebsregister Rheinland-Pfalz gGmbH
   url: https://www.krebsregister-rlp.de/
   email: info@krebsregister-rlp.de
 dependencies:
   de.basisprofil.r4: 1.4.0
+
+menu:
+  Home: index.html
+  Artifacts: artifacts.html
