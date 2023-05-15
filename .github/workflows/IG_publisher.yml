@@ -32,6 +32,7 @@ jobs:
           echo "Update the image to the latest publisher..."
           # Get the latest publisher - don't run the batch script but run the line directly
           curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
+          fhir install de.basisprofil.r4@1.4.0
           echo "Run the IG publisher..."
           ls -lahs resources
           java -jar ./input-cache/publisher.jar publisher -ig resources
