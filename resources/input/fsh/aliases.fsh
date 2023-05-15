@@ -1,5 +1,5 @@
-Alias:   LNC = http://loinc.org
-Alias:   SCT = http://snomed.info/sct
+Alias: LNC = http://loinc.org
+Alias: SCT = http://snomed.info/sct
 Alias: UICC = https://www.uicc.org/resources/tnm
 
 Alias: $csConditionVerificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status

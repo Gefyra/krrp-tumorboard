@@ -56,7 +56,7 @@ Description: "The extent of cancer represented by the stage group, based on a TN
 
 
 Profile:  TNMPrimaryTumorCategory
-Id: mcode-tnm-primary-tumor-category
+Id: tnm-primary-tumor-category
 Parent: CancerStageGroup
 Title: "TNM Primary Tumor Category Profile"
 Description: "Category of the primary tumor, based on its size and extent, based on evidence such as physical examination, imaging, and/or biopsy."
@@ -68,7 +68,7 @@ Description: "Category of the primary tumor, based on its size and extent, based
 * value[x] ^binding.extension[http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet].valueCanonical = Canonical(TNMPrimaryTumorCategoryMaxVS)
 
 Profile:  TNMRegionalNodesCategory
-Id: mcode-tnm-regional-nodes-category
+Id: tnm-regional-nodes-category
 Parent: CancerStageGroup
 Title: "TNM Regional Nodes Category Profile"
 Description: "Category of the presence or absence of metastases in regional lymph nodes, based on evidence such as physical examination, imaging, and/or biopsy."
@@ -80,7 +80,7 @@ Description: "Category of the presence or absence of metastases in regional lymp
 * value[x] ^binding.extension[http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet].valueCanonical = Canonical(TNMRegionalNodesCategoryMaxVS)
 
 Profile:  TNMDistantMetastasesCategory
-Id: mcode-tnm-distant-metastases-category
+Id: tnm-distant-metastases-category
 Parent: CancerStageGroup
 Title: "TNM Distant Metastases Category Profile"
 Description: "Category describing the extent of a tumor metastasis in remote anatomical locations, based on evidence such as physical examination, imaging, and/or biopsy."
