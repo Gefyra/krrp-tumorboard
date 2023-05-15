@@ -33,6 +33,6 @@ jobs:
           # Get the latest publisher - don't run the batch script but run the line directly
           curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
           echo "Run the IG publisher..."
-          ls -lahs
-          java -jar ./input-cache/publisher.jar publisher -ig .
+          ls -lahs resources
+          java -jar ./input-cache/publisher.jar publisher -ig resources
           unzip output/full-ig.zip -d upload/
