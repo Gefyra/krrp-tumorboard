@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "TNMRegionalNodesCategoryVS",
+  "id": "tnm-regional-nodes-category-vs",
+  "title": "TNM Regional Nodes Category Value Set",
+  "description": "Result values for N category. This value set contains SNOMED-CT equivalents of UICC codes for the N category, according to TNM staging rules.",
+  "version": "0.1.0",
+  "url": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-regional-nodes-category-vs",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "1222588006"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "1222590007"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "1222596001"
+          }
+        ]
+      }
+    ]
+  }
+}

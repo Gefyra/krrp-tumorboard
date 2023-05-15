@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "TNMRegionalNodesStagingTypeVS",
+  "id": "tnm-regional-nodes-staging-type-vs",
+  "title": "TNM Regional Nodes Staging Type Value Set",
+  "description": "Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for regional nodes (N) staging observation.",
+  "version": "0.1.0",
+  "url": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-regional-nodes-staging-type-vs",
+  "copyright": "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "21906-3",
+            "display": "Regional lymph nodes.clinical [Class] Cancer"
+          },
+          {
+            "code": "21900-6",
+            "display": "Regional lymph nodes.pathology [Class] Cancer"
+          },
+          {
+            "code": "21912-1",
+            "display": "Regional lymph nodes.other [Class] Cancer"
+          }
+        ]
+      }
+    ]
+  }
+}

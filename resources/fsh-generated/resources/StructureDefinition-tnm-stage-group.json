@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
   "id": "tnm-stage-group",
-  "url": "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tnm-stage-group",
-  "version": "0.0.1-work",
+  "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tnm-stage-group",
+  "version": "0.1.0",
   "name": "TNMStageGroup",
   "title": "TNM Stage Group Profile",
   "status": "active",
@@ -43,7 +43,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/cancer-stage-group",
+  "baseDefinition": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/cancer-stage-group",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -52,7 +52,7 @@
         "path": "Observation.code",
         "binding": {
           "strength": "required",
-          "valueSet": "https://krebsregister-rlp.de/fhir/tumorboard/ValueSet/mcode-tnm-stage-group-staging-type-vs"
+          "valueSet": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-staging-type-vs"
         }
       },
       {
@@ -65,12 +65,26 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "short": "The stage group",
-        "definition": "The overall cancer stage, such as stage group IIA."
+        "definition": "The overall cancer stage, such as stage group IIA.",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-vs",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
+              "valueCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-max-vs"
+            }
+          ]
+        }
       },
       {
         "id": "Observation.method",
         "path": "Observation.method",
-        "min": 1
+        "min": 1,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-staging-method-vs"
+        }
       },
       {
         "id": "Observation.hasMember",
@@ -100,7 +114,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/mcode-tnm-primary-tumor-category"
+              "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tnm-primary-tumor-category"
             ]
           }
         ],
@@ -119,7 +133,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/mcode-tnm-regional-nodes-category"
+              "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tnm-regional-nodes-category"
             ]
           }
         ],
@@ -138,7 +152,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/mcode-tnm-distant-metastases-category"
+              "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tnm-distant-metastases-category"
             ]
           }
         ],

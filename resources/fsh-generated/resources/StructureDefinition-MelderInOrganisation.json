@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
   "id": "MelderInOrganisation",
-  "url": "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/MelderInOrganisation",
-  "version": "0.0.1-work",
+  "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/MelderInOrganisation",
+  "version": "0.1.0",
   "name": "MelderInOrganisation",
   "title": "Melder in Organisation",
   "status": "draft",
@@ -68,7 +68,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Melder"
+              "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Melder"
             ]
           }
         ],
@@ -83,7 +83,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Organisation"
+              "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Organisation"
             ]
           }
         ],

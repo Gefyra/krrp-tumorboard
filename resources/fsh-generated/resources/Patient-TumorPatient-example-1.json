@@ -3,7 +3,7 @@
   "id": "TumorPatient-example-1",
   "meta": {
     "profile": [
-      "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient"
+      "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient"
     ]
   },
   "identifier": [

@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Diagnose",
-  "url": "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Diagnose",
-  "version": "0.0.1-work",
+  "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Diagnose",
+  "version": "0.1.0",
   "name": "KrebsDiagnose",
   "title": "Diagnose",
   "status": "draft",
@@ -260,7 +260,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient"
+              "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient"
             ]
           }
         ],

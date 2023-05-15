@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Organisation",
-  "url": "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Organisation",
-  "version": "0.0.1-work",
+  "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Organisation",
+  "version": "0.1.0",
   "name": "Organisation",
   "title": "Organisation",
   "status": "draft",

@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
   "id": "cancer-stage-group",
-  "url": "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/cancer-stage-group",
-  "version": "0.0.1-work",
+  "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/cancer-stage-group",
+  "version": "0.1.0",
   "name": "CancerStageGroup",
   "title": "Cancer Stage Group Profile",
   "status": "active",
@@ -60,7 +60,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://krebsregister-rlp.de/fhir/tumorboard/ValueSet/mcode-cancer-staging-type-vs"
+          "valueSet": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-staging-type-vs"
         }
       },
       {
@@ -71,7 +71,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient"
+              "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient"
             ]
           }
         ],
@@ -86,7 +86,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Diagnose"
+              "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Diagnose"
             ]
           }
         ],
@@ -108,7 +108,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://krebsregister-rlp.de/fhir/tumorboard/ValueSet/mcode-cancer-stage-group-vs"
+          "valueSet": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-stage-group-vs"
         }
       },
       {
@@ -117,7 +117,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://krebsregister-rlp.de/fhir/tumorboard/ValueSet/mcode-cancer-staging-method-vs"
+          "valueSet": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-staging-method-vs"
         }
       },
       {

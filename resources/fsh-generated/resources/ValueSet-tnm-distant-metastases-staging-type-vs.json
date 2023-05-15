@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "TNMDistantMetastasesStagingTypeVS",
+  "id": "tnm-distant-metastases-staging-type-vs",
+  "title": "TNM Distant Metastases Staging Type Value Set",
+  "description": "Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for distant metastases (M) staging observation.",
+  "version": "0.1.0",
+  "url": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-distant-metastases-staging-type-vs",
+  "copyright": "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "21907-1",
+            "display": "Distant metastases.clinical [Class] Cancer"
+          },
+          {
+            "code": "21901-4",
+            "display": "Distant metastases.pathology [Class] Cancer"
+          },
+          {
+            "code": "21913-9",
+            "display": "Distant metastases.other [Class] Cancer"
+          }
+        ]
+      }
+    ]
+  }
+}

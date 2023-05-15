@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
   "id": "TumorPatient",
-  "url": "https://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient",
-  "version": "0.0.1-work",
+  "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient",
+  "version": "0.1.0",
   "name": "TumorPatient",
   "title": "Tumor-Patient",
   "status": "draft",

@@ -1,0 +1,122 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CancerStagingMethodVS",
+  "id": "cancer-staging-method-vs",
+  "title": "Cancer Staging Method Value Set",
+  "description": "System or method used for staging cancers. The terms in this value set describe staging systems, not specific stages or descriptors used within those systems.",
+  "version": "0.1.0",
+  "url": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-staging-method-vs",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "254292007"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "1149162008",
+            "display": "International Staging System for multiple myeloma (staging scale)"
+          },
+          {
+            "code": "1149163003",
+            "display": "Revised International Staging System for multiple myeloma (staging scale)"
+          },
+          {
+            "code": "246165003",
+            "display": "Extent of disease (attribute)"
+          },
+          {
+            "code": "418414003",
+            "display": "The revised European-American Lymphoma classification (qualifier value)"
+          },
+          {
+            "code": "418823005",
+            "display": "The World Health Organization classification of lymphoid malignancies (qualifier value)"
+          }
+        ]
+      }
+    ],
+    "exclude": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "258318002"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "258309004"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "258233007"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "258271004"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "42114005",
+            "display": "Walter Reed stage 1 (tumor staging)"
+          },
+          {
+            "code": "15972002",
+            "display": "Walter Reed stage 2 (tumor staging)"
+          },
+          {
+            "code": "13808002",
+            "display": "Walter Reed stage 3 (tumor staging)"
+          },
+          {
+            "code": "74542008",
+            "display": "Walter Reed stage 4 (tumor staging)"
+          },
+          {
+            "code": "66470009",
+            "display": "Walter Reed stage 5 (tumor staging)"
+          },
+          {
+            "code": "83200007",
+            "display": "Walter Reed stage 6 (tumor staging)"
+          }
+        ]
+      }
+    ]
+  }
+}

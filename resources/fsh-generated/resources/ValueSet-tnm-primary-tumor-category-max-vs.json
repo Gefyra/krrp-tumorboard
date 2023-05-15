@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "TNMPrimaryTumorCategoryMaxVS",
+  "id": "tnm-primary-tumor-category-max-vs",
+  "title": "TNM Primary Tumor Maximum Value Set",
+  "description": "Values for TNM primary tumor category must be selected from this value set, which includes all codes from UICC and all codes from TNMPrimaryTumorCategoryVS.",
+  "version": "0.1.0",
+  "url": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-category-max-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-category-vs"
+        ]
+      },
+      {
+        "system": "https://www.uicc.org/resources/tnm"
+      }
+    ]
+  }
+}
