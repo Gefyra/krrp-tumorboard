@@ -69,6 +69,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/operation"
+        },
+        "name": "Operation",
+        "description": "Hier steht die Beschreibung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/operation-ops-code"
+        },
+        "name": "Operation OPS Code",
+        "description": "Hier steht die Beschreibung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/Organisation"
         },
         "name": "Organisation",
@@ -259,6 +275,20 @@
       },
       {
         "reference": {
+          "reference": "Procedure/OperationExample"
+        },
+        "name": "OperationExample",
+        "exampleCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/OperationOpsCodeExample"
+        },
+        "name": "OperationOpsCodeExample",
+        "exampleCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation-ops-code"
+      },
+      {
+        "reference": {
           "reference": "Organization/Organisation-example-1"
         },
         "name": "Organisation-example-1",
@@ -276,7 +306,18 @@
       "nameUrl": "toc.html",
       "title": "Table of Contents",
       "generation": "html",
-      "page": []
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "tb.html",
+          "title": "Tb",
+          "generation": "markdown"
+        }
+      ]
     },
     "parameter": [
       {

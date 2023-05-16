@@ -1,0 +1,13 @@
+{
+  "resourceType": "Procedure",
+  "id": "OperationExample",
+  "meta": {
+    "profile": [
+      "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation"
+    ]
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/test"
+  }
+}

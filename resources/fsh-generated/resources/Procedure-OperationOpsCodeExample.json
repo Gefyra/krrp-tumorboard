@@ -1,0 +1,28 @@
+{
+  "resourceType": "Procedure",
+  "id": "OperationOpsCodeExample",
+  "meta": {
+    "profile": [
+      "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation-ops-code"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "code": "5-123.4",
+        "version": "2023"
+      }
+    ]
+  },
+  "partOf": [
+    {
+      "reference": "Procedure/OperationExample"
+    }
+  ],
+  "performedDateTime": "2023-04-01",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/test"
+  }
+}

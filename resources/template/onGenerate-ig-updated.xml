@@ -12,7 +12,7 @@
    <version value="0.1.0"/>
    <name value="TumorBoardRLP"/>
    <status value="draft"/>
-   <date value="2023-05-15T21:47:09+02:00"/>
+   <date value="2023-05-16T17:19:43+02:00"/>
    <publisher value="Krebsregister Rheinland-Pfalz gGmbH"/>
    <contact>
       <name value="Krebsregister Rheinland-Pfalz gGmbH"/>
@@ -329,6 +329,36 @@
          </reference>
          <name value="Melder in Organisation"/>
          <description value="Zuordnung des Melders zu einer Organisation"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-operation.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/operation"/>
+         </reference>
+         <name value="Operation"/>
+         <description value="Hier steht die Beschreibung"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-operation-ops-code.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/operation-ops-code"/>
+         </reference>
+         <name value="Operation OPS Code"/>
+         <description value="Hier steht die Beschreibung"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -692,6 +722,34 @@
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Procedure"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Procedure-OperationExample.html"/>
+         </extension>
+         <reference>
+            <reference value="Procedure/OperationExample"/>
+         </reference>
+         <name value="OperationExample"/>
+         <exampleCanonical value="http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Procedure"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Procedure-OperationOpsCodeExample.html"/>
+         </extension>
+         <reference>
+            <reference value="Procedure/OperationOpsCodeExample"/>
+         </reference>
+         <name value="OperationOpsCodeExample"/>
+         <exampleCanonical value="http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation-ops-code"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Organization"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -726,6 +784,22 @@
          <title value="Table of Contents"/>
          <generation value="html"/>
          <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="index.html"/>
+            </extension>
+            <nameUrl value="index.html"/>
+            <title value="Home"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="tb.html"/>
+            </extension>
+            <nameUrl value="tb.html"/>
+            <title value="Tb"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
             <nameUrl value="artifacts.html"/>
             <title value="Artifacts Summary"/>
             <generation value="html"/>
@@ -747,6 +821,16 @@
             <page>
                <nameUrl value="StructureDefinition-MelderInOrganisation.html"/>
                <title value="Melder in Organisation"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-operation.html"/>
+               <title value="Operation"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-operation-ops-code.html"/>
+               <title value="Operation OPS Code"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -867,6 +951,16 @@
             <page>
                <nameUrl value="PractitionerRole-MelderInOrganisation-example-1.html"/>
                <title value="MelderInOrganisation-example-1"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Procedure-OperationExample.html"/>
+               <title value="OperationExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Procedure-OperationOpsCodeExample.html"/>
+               <title value="OperationOpsCodeExample"/>
                <generation value="generated"/>
             </page>
             <page>
