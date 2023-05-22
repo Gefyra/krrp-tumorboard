@@ -38,7 +38,7 @@ jobs:
           java -jar ./input-cache/publisher.jar publisher -ig resources
           unzip resources/output/full-ig.zip -d upload/
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: upload
+#      - name: Deploy 🚀
+#        uses: JamesIves/github-pages-deploy-action@v4
+#        with:
+#          folder: upload
