@@ -3,7 +3,6 @@ Parent: Practitioner
 Id: Melder
 Title: "Melder"
 Description: "Meldende/anfragende ÄrztIn"
-* insert meta-profile
 * id MS
   * ^short = "eindeutige ID der Ressource auf dem Server"
 * name MS

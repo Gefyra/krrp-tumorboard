@@ -41,6 +41,14 @@
         "id": "Procedure.partOf",
         "path": "Procedure.partOf",
         "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -86,24 +94,20 @@
         "sliceName": "ops",
         "min": 1,
         "max": "1",
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/bfarm/ops"
+        },
         "mustSupport": true
-      },
-      {
-        "id": "Procedure.code.coding:ops.system",
-        "path": "Procedure.code.coding.system",
-        "patternUri": "http://fhir.de/CodeSystem/bfarm/ops"
       },
       {
         "id": "Procedure.code.coding:loinc",
         "path": "Procedure.code.coding",
         "sliceName": "loinc",
         "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Procedure.code.coding:loinc.system",
-        "path": "Procedure.code.coding.system",
-        "patternUri": "http://loinc.org"
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org"
+        }
       },
       {
         "id": "Procedure.subject",

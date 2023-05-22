@@ -3,7 +3,6 @@ Parent: PractitionerRole
 Id: MelderInOrganisation
 Title: "Melder in Organisation"
 Description: "Zuordnung des Melders zu einer Organisation"
-* insert meta-profile
 * id MS
   * ^short = "eindeutige ID der Ressource auf dem Server"
 * practitioner 1.. MS

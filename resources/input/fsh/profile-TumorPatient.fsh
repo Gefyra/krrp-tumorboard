@@ -3,7 +3,6 @@ Parent: Patient
 Id: TumorPatient
 Title: "Tumor-Patient"
 Description: "Patienten-Stammdaten"
-* insert meta-profile
 * id MS
   * ^short = "eindeutige ID der Ressource auf dem Server"
 * identifier MS

@@ -5,24 +5,8 @@
   "version": "0.1.0",
   "name": "Melder",
   "title": "Melder",
-  "status": "draft",
-  "experimental": true,
-  "date": "2023-02-17",
-  "publisher": "Krebsregister Rheinland-Pfalz gGmbH",
-  "contact": [
-    {
-      "name": "Krebsregister Rheinland-Pfalz gGmbH",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.krebsregister-rlp.de/",
-          "use": "work"
-        }
-      ]
-    }
-  ],
+  "status": "active",
   "description": "Meldende/anfragende ÄrztIn",
-  "copyright": "Copyright 2023 Krebsregister Rheinland-Pfalz gGmbH",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

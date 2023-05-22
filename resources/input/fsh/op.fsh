@@ -10,7 +10,7 @@ Id: operation-ops-code
 Title: "Operation OPS Code"
 Description: "Hier steht die Beschreibung"
 * partOf 1.. MS
-* partOf only Operation
+* partOf only Reference(Operation)
 * code 1.. MS
   * coding ^slicing.discriminator.type = #pattern
   * coding ^slicing.discriminator.path = "$this"
@@ -21,9 +21,9 @@ Description: "Hier steht die Beschreibung"
     * version MS
   * coding contains ops 1..1 and loinc 0..1
   * coding[ops] MS
-    * system = $OPS
+    * ^patternCoding.system = $OPS
   * coding[loinc]
-    * system = LNC
+    * ^patternCoding.system = LNC
 * performed[x] only dateTime
 * performed[x] 1.. MS
 * subject 1.. MS

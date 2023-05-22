@@ -8,6 +8,6 @@
   },
   "status": "completed",
   "subject": {
-    "reference": "Patient/test"
+    "reference": "Patient/TumorPatient-example-1"
   }
 }

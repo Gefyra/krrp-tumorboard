@@ -3,7 +3,6 @@ Parent: Organization
 Id: Organisation
 Title: "Organisation"
 Description: "Organisation (Krankenhaus, Praxis)"
-* insert meta-profile
 * id MS
   * ^short = "eindeutige ID der Ressource auf dem Server"
 * name MS

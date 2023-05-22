@@ -3,7 +3,6 @@ Parent: Condition
 Id: Diagnose
 Title: "Diagnose"
 Description: "Diagnoseinformationen (Primärtumor, frühere Tumore)"
-* insert meta-profile
 * id MS
   * ^short = "eindeutige ID der Ressource auf dem Server"
 * clinicalStatus MS

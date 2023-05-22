@@ -23,6 +23,6 @@
   "performedDateTime": "2023-04-01",
   "status": "completed",
   "subject": {
-    "reference": "Patient/test"
+    "reference": "Patient/TumorPatient-example-1"
   }
 }
