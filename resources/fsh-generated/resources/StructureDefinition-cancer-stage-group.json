@@ -1,21 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "cancer-stage-group",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Diagnostics"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/cancer-stage-group",
-  "version": "0.1.0",
   "name": "CancerStageGroup",
   "title": "Cancer Stage Group Profile",
-  "status": "active",
+  "status": "draft",
   "description": "An assessment of the extent of the cancer in the body, according to a given cancer staging classification system. This profile can be used with any staging system, but it is specifically targeted for non-TNM staging systems, since specialized TNM staging profiles are provided.",
   "fhirVersion": "4.0.1",
   "mapping": [

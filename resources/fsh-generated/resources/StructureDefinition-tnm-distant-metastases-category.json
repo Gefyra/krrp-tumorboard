@@ -1,21 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "tnm-distant-metastases-category",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Diagnostics"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tnm-distant-metastases-category",
-  "version": "0.1.0",
   "name": "TNMDistantMetastasesCategory",
   "title": "TNM Distant Metastases Category Profile",
-  "status": "active",
+  "status": "draft",
   "description": "Category describing the extent of a tumor metastasis in remote anatomical locations, based on evidence such as physical examination, imaging, and/or biopsy.",
   "fhirVersion": "4.0.1",
   "mapping": [

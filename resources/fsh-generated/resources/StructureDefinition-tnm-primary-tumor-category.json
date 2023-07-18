@@ -1,21 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "tnm-primary-tumor-category",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Diagnostics"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tnm-primary-tumor-category",
-  "version": "0.1.0",
   "name": "TNMPrimaryTumorCategory",
   "title": "TNM Primary Tumor Category Profile",
-  "status": "active",
+  "status": "draft",
   "description": "Category of the primary tumor, based on its size and extent, based on evidence such as physical examination, imaging, and/or biopsy.",
   "fhirVersion": "4.0.1",
   "mapping": [

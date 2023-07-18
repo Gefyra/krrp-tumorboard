@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "CancerStagingMethodVS",
   "id": "cancer-staging-method-vs",
   "title": "Cancer Staging Method Value Set",
   "description": "System or method used for staging cancers. The terms in this value set describe staging systems, not specific stages or descriptors used within those systems.",
-  "version": "0.1.0",
   "url": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-staging-method-vs",
   "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
   "experimental": false,

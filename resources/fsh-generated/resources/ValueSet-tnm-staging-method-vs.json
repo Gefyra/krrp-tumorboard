@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "TNMStagingMethodVS",
   "id": "tnm-staging-method-vs",
   "title": "TNM Staging Method Value Set",
   "description": "Method used for TNM staging, e.g., UICC 6th, 7th, or 8th edition.",
-  "version": "0.1.0",
   "url": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-staging-method-vs",
   "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
   "experimental": false,

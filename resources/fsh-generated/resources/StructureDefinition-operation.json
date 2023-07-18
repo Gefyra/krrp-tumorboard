@@ -1,22 +1,11 @@
 {
   "resourceType": "StructureDefinition",
   "id": "operation",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Summary"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation",
-  "version": "0.1.0",
   "name": "Operation",
   "title": "Operation",
-  "status": "active",
-  "description": "Hier steht die Beschreibung",
+  "status": "draft",
+  "description": "Operation (chirurgischer Eingriff) in ihrer Gesamtheit.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -48,8 +37,97 @@
   "differential": {
     "element": [
       {
-        "id": "Procedure",
-        "path": "Procedure"
+        "id": "Procedure.extension:intention",
+        "path": "Procedure.extension",
+        "sliceName": "intention",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:intention.value[x]",
+        "path": "Procedure.extension.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:intention.value[x].coding",
+        "path": "Procedure.extension.value[x].coding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:intention.value[x].coding.system",
+        "path": "Procedure.extension.value[x].coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:intention.value[x].coding.code",
+        "path": "Procedure.extension.value[x].coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.performed[x]",
+        "path": "Procedure.performed[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.performed[x]:performedDateTime",
+        "path": "Procedure.performed[x]",
+        "sliceName": "performedDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.complication",
+        "path": "Procedure.complication",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/obds-op-komplikation-vs"
+        }
+      },
+      {
+        "id": "Procedure.complication.coding",
+        "path": "Procedure.complication.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.complication.coding.system",
+        "path": "Procedure.complication.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.complication.coding.code",
+        "path": "Procedure.complication.coding.code",
+        "min": 1,
+        "mustSupport": true
       }
     ]
   }

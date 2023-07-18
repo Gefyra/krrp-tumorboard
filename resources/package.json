@@ -1,0 +1,12 @@
+{
+  "name": "krrp-tumorboard",
+  "version": "0.1.0",
+  "description": "KR RLP Tumorboard",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "dependencies": {
+    "de.basisprofil.r4": "1.4.0",
+    "hl7.fhir.us.mcode": "2.1.0"
+  }
+}

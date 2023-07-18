@@ -1,0 +1,19 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ObdsOpKomplikationVS",
+  "id": "obds-op-komplikation-vs",
+  "title": "oBDS Operation Komplikation Value Set",
+  "description": "Komplikation gemäß Vorgabe oBDS.",
+  "url": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/obds-op-komplikation-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/obds-op-komplikation-cs"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
+      }
+    ]
+  }
+}

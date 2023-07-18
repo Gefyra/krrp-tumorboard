@@ -9,5 +9,6 @@
   "status": "completed",
   "subject": {
     "reference": "Patient/TumorPatient-example-1"
-  }
+  },
+  "performedDateTime": "2023-06-07"
 }

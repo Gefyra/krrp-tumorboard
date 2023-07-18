@@ -1,9 +1,9 @@
 {
   "resourceType": "Procedure",
-  "id": "OperationOpsCodeExample",
+  "id": "OperationEinzelprozedurExample",
   "meta": {
     "profile": [
-      "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation-ops-code"
+      "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation-einzelprozedur"
     ]
   },
   "code": {

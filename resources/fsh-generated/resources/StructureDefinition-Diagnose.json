@@ -1,21 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Diagnose",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Summary"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Diagnose",
-  "version": "0.1.0",
-  "name": "KrebsDiagnose",
-  "title": "Diagnose",
-  "status": "active",
+  "name": "TumorDiagnose",
+  "title": "Tumordiagnose",
+  "status": "draft",
   "description": "Diagnoseinformationen (Primärtumor, frühere Tumore)",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -183,20 +172,18 @@
         "max": "0"
       },
       {
-        "id": "Condition.code.coding.extension:Seitenlokalisation.valueCoding",
-        "path": "Condition.code.coding.extension.valueCoding",
-        "min": 1,
-        "max": "1",
+        "id": "Condition.code.coding.extension:Seitenlokalisation.value[x]",
+        "path": "Condition.code.coding.extension.value[x]",
         "mustSupport": true
       },
       {
-        "id": "Condition.code.coding.extension:Seitenlokalisation.valueCoding.system",
-        "path": "Condition.code.coding.extension.valueCoding.system",
+        "id": "Condition.code.coding.extension:Seitenlokalisation.value[x].system",
+        "path": "Condition.code.coding.extension.value[x].system",
         "mustSupport": true
       },
       {
-        "id": "Condition.code.coding.extension:Seitenlokalisation.valueCoding.code",
-        "path": "Condition.code.coding.extension.valueCoding.code",
+        "id": "Condition.code.coding.extension:Seitenlokalisation.value[x].code",
+        "path": "Condition.code.coding.extension.value[x].code",
         "mustSupport": true
       },
       {
@@ -261,8 +248,23 @@
         "mustSupport": true
       },
       {
-        "id": "Condition.onsetDateTime",
-        "path": "Condition.onsetDateTime",
+        "id": "Condition.onset[x]",
+        "path": "Condition.onset[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Condition.onset[x]:onsetDateTime",
+        "path": "Condition.onset[x]",
+        "sliceName": "onsetDateTime",
         "min": 0,
         "max": "1",
         "type": [

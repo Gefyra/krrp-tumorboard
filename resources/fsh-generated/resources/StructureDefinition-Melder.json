@@ -1,21 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Melder",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Base.Individuals"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "individual"
-    }
-  ],
   "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Melder",
-  "version": "0.1.0",
   "name": "Melder",
   "title": "Melder",
-  "status": "active",
+  "status": "draft",
   "description": "Meldende/anfragende ÄrztIn",
   "fhirVersion": "4.0.1",
   "mapping": [

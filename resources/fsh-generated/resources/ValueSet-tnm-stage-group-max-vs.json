@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "TNMStageGroupMaxVS",
   "id": "tnm-stage-group-max-vs",
   "title": "TNM Stage Group Maximum Value Set",
   "description": "Values for TNM stage group must be selected from this value set, which includes all codes from UICC and all codes from TNMStageGroupVS.",
-  "version": "0.1.0",
   "url": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-max-vs",
   "experimental": false,
   "compose": {

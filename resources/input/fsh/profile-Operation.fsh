@@ -2,14 +2,27 @@ Profile: Operation
 Parent: Procedure
 Id: operation
 Title: "Operation"
-Description: "Hier steht die Beschreibung"
+Description: "Operation (chirurgischer Eingriff) in ihrer Gesamtheit."
+* extension contains
+    mcode-procedure-intent named intention 0..1
+* extension[intention] MS
+  * valueCodeableConcept MS
+    * coding 1.. MS
+      * system 1..1 MS
+      * code 1..1 MS
+* performed[x] MS
+* performedDateTime MS
+* complication from ObdsOpKomplikationVS (required)
+* complication MS
+  * coding MS
+    * system 1.. MS
+    * code 1.. MS
 
-
-Profile: OperationOpsCode
+Profile: OperationEinzelprozedur
 Parent: Procedure
-Id: operation-ops-code
-Title: "Operation OPS Code"
-Description: "Hier steht die Beschreibung"
+Id: operation-einzelprozedur
+Title: "Operation Einzelprozedur"
+Description: "Einzelprozedur als Teil einer Operation. Typischerweise mittels OPS dokumentiert."
 * partOf 1.. MS
 * partOf only Reference(Operation)
 * code 1.. MS
@@ -19,7 +32,7 @@ Description: "Hier steht die Beschreibung"
   * coding
     * system 1.. MS
     * code 1.. MS
-    * version MS
+    * version 1.. MS
   * coding contains ops 1..1 and loinc 0..1
   * coding[ops] MS
     * ^patternCoding.system = $OPS
@@ -35,10 +48,11 @@ InstanceOf: Operation
 Usage: #example
 * status = #completed
 * subject = Reference(TumorPatient-example-1)
+* performedDateTime = "2023-06-07"
 
 
-Instance: OperationOpsCodeExample
-InstanceOf: OperationOpsCode
+Instance: OperationEinzelprozedurExample
+InstanceOf: OperationEinzelprozedur
 Usage: #example
 * partOf = Reference(OperationExample)
 * code.coding[ops]

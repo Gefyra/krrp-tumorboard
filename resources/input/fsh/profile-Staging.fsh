@@ -1,4 +1,4 @@
-Profile: CancerStageGroup 
+Profile: CancerStageGroup
 Id: cancer-stage-group
 Parent: Observation
 Title: "Cancer Stage Group Profile"
@@ -11,7 +11,7 @@ Description: "An assessment of the extent of the cancer in the body, according t
 * value[x] from CancerStageVS (preferred)
 * insert NotUsed(device)
 * insert NotUsed(referenceRange)
-* focus only Reference(KrebsDiagnose)
+* focus only Reference(TumorDiagnose)
 * focus ^short = "The cancer condition associated with staging assessment."
 * focus ^definition = "Staging is associated with a particular primary cancer condition. Observation.focus is used to point back to that condition."
 * hasMember ^short = "Prognostic factors contributing to stage determination."
@@ -33,9 +33,9 @@ Description: "The extent of cancer represented by the stage group, based on a TN
 * value[x] ^definition = "The overall cancer stage, such as stage group IIA."
 * value[x] ^binding.extension[http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet].valueCanonical = Canonical(TNMStageGroupMaxVS)
 * hasMember MS
-* method 1..1 
+* method 1..1
 * method from TNMStagingMethodVS (extensible)
-* focus 1..1  
+* focus 1..1
 * insert SliceReferenceOnProfile(hasMember)
 * hasMember contains
     tnmPrimaryTumorCategory 0..1 MS and

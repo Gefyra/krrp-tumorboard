@@ -1,7 +1,7 @@
-Profile: KrebsDiagnose
+Profile: TumorDiagnose
 Parent: Condition
 Id: Diagnose
-Title: "Diagnose"
+Title: "Tumordiagnose"
 Description: "Diagnoseinformationen (Primärtumor, frühere Tumore)"
 * id MS
   * ^short = "eindeutige ID der Ressource auf dem Server"

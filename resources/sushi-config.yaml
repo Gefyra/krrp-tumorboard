@@ -26,6 +26,7 @@ publisher:
 #
 dependencies:
   de.basisprofil.r4: 1.4.0
+  hl7.fhir.us.mcode: 2.1.0
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode

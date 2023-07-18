@@ -1,11 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "TNMRegionalNodesCategoryMaxVS",
   "id": "tnm-regional-nodes-category-max-vs",
   "title": "TNM Regional Nodes Maximum Value Set",
   "description": "Values for TNM regional nodes category must be selected from this value set, which includes all codes from UICC and all codes from TNMRegionalNodesCategoryVS.",
-  "version": "0.1.0",
   "url": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-regional-nodes-category-max-vs",
   "experimental": false,
   "compose": {

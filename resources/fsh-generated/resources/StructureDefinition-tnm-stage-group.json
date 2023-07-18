@@ -1,21 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "tnm-stage-group",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Diagnostics"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tnm-stage-group",
-  "version": "0.1.0",
   "name": "TNMStageGroup",
   "title": "TNM Stage Group Profile",
-  "status": "active",
+  "status": "draft",
   "description": "The extent of cancer represented by the stage group, based on a TNM staging system.",
   "fhirVersion": "4.0.1",
   "mapping": [

@@ -1,21 +1,10 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Organisation",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Base.Entities"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "business"
-    }
-  ],
   "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Organisation",
-  "version": "0.1.0",
   "name": "Organisation",
   "title": "Organisation",
-  "status": "active",
+  "status": "draft",
   "description": "Organisation (Krankenhaus, Praxis)",
   "fhirVersion": "4.0.1",
   "mapping": [
