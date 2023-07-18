@@ -1,6 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "id": "MelderInOrganisation",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Individuals"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "individual"
+    }
+  ],
   "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/MelderInOrganisation",
   "version": "0.1.0",
   "name": "MelderInOrganisation",

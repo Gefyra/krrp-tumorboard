@@ -5,10 +5,10 @@
   "version": "0.1.0",
   "name": "TumorBoardRLP",
   "status": "draft",
-  "publisher": "Krebsregister Rheinland-Pfalz gGmbH",
+  "publisher": "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact": [
     {
-      "name": "Krebsregister Rheinland-Pfalz gGmbH",
+      "name": "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
       "telecom": [
         {
           "system": "url",

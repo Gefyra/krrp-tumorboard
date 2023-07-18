@@ -1,6 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "id": "tnm-regional-nodes-category",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
   "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tnm-regional-nodes-category",
   "version": "0.1.0",
   "name": "TNMRegionalNodesCategory",

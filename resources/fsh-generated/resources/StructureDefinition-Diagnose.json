@@ -1,6 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Diagnose",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Summary"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
   "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Diagnose",
   "version": "0.1.0",
   "name": "KrebsDiagnose",

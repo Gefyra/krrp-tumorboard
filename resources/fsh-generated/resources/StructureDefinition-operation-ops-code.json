@@ -1,6 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "id": "operation-ops-code",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Summary"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
   "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation-ops-code",
   "version": "0.1.0",
   "name": "OperationOpsCode",
