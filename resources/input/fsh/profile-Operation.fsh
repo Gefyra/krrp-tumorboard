@@ -4,6 +4,7 @@ Id: operation
 Title: "Operation"
 Description: "Hier steht die Beschreibung"
 
+
 Profile: OperationOpsCode
 Parent: Procedure
 Id: operation-ops-code
@@ -15,7 +16,7 @@ Description: "Hier steht die Beschreibung"
   * coding ^slicing.discriminator.type = #pattern
   * coding ^slicing.discriminator.path = "$this"
   * coding ^slicing.rules = #open
-  * coding 
+  * coding
     * system 1.. MS
     * code 1.. MS
     * version MS
@@ -28,6 +29,14 @@ Description: "Hier steht die Beschreibung"
 * performed[x] 1.. MS
 * subject 1.. MS
 
+
+Instance: OperationExample
+InstanceOf: Operation
+Usage: #example
+* status = #completed
+* subject = Reference(TumorPatient-example-1)
+
+
 Instance: OperationOpsCodeExample
 InstanceOf: OperationOpsCode
 Usage: #example
@@ -36,13 +45,5 @@ Usage: #example
   * code = #5-123.4
   * version = "2023"
 * performedDateTime = "2023-04-01"
-* status = #completed
-* subject = Reference(TumorPatient-example-1)
-
-
-
-Instance: OperationExample
-InstanceOf: Operation
-Usage: #example
 * status = #completed
 * subject = Reference(TumorPatient-example-1)
