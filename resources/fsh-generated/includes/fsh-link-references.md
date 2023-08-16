@@ -2,10 +2,14 @@
 [CancerStageVS]: ValueSet-cancer-stage-group-vs.html
 [CancerStagingMethodVS]: ValueSet-cancer-staging-method-vs.html
 [CancerStagingTypeVS]: ValueSet-cancer-staging-type-vs.html
+[Histologie]: StructureDefinition-histologie.html
+[Histologie-Example]: Observation-Histologie-Example.html
+[HistoGrade]: CodeSystem-HistoGrade.html
 [Melder]: StructureDefinition-Melder.html
 [MelderInOrganisation]: StructureDefinition-MelderInOrganisation.html
 [Melder-example-1]: Practitioner-Melder-example-1.html
 [MelderInOrganisation-example-1]: PractitionerRole-MelderInOrganisation-example-1.html
+[ICDO3Morphologie]: ValueSet-icd-o-3-morphologie.html
 [ObdsOpKomplikationCS]: CodeSystem-obds-op-komplikation-cs.html
 [ObdsOpKomplikationVS]: ValueSet-obds-op-komplikation-vs.html
 [Operation]: StructureDefinition-operation.html
@@ -31,6 +35,8 @@
 [TNMStageGroupStagingTypeVS]: ValueSet-tnm-stage-group-staging-type-vs.html
 [TNMStageGroupVS]: ValueSet-tnm-stage-group-vs.html
 [TNMStagingMethodVS]: ValueSet-tnm-staging-method-vs.html
+[Tumor]: StructureDefinition-tumor.html
+[Tumor-Example]: Specimen-Tumor-Example.html
 [TumorPatient]: StructureDefinition-TumorPatient.html
 [TumorDiagnose]: StructureDefinition-Diagnose.html
 [TumorPatient-example-1]: Patient-TumorPatient-example-1.html

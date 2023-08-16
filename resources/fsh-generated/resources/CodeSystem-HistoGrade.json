@@ -1,0 +1,65 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "HistoGrade",
+  "id": "HistoGrade",
+  "title": "Histopathologische Grading Codes",
+  "description": "Die histopathologische Einstufung des invasiven Karzinoms ",
+  "url": "http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/HistoGrade",
+  "concept": [
+    {
+      "code": "G0",
+      "display": "Grading nicht vorgesehen"
+    },
+    {
+      "code": "G1",
+      "display": "gut differenziert",
+      "definition": "hochdifferenzierter Tumor mit niederem Malignitätsgrad"
+    },
+    {
+      "code": "G2",
+      "display": "mäßig differenziert",
+      "definition": "mittelhochdifferenzierter Tumor mit mittlerem Malignitätsgrad"
+    },
+    {
+      "code": "G3",
+      "display": "schlecht / gering differenziert",
+      "definition": "wenig differenzierter Tumor mit hohem Malignitätsgrad"
+    },
+    {
+      "code": "G4",
+      "display": "undifferenzierter Tumor mit sehr hohem Malignitätsgrad",
+      "definition": "nicht bei allen Tumorentitäten"
+    },
+    {
+      "code": "GX",
+      "display": "nicht bestimmbar"
+    },
+    {
+      "code": "GL",
+      "display": "low grade (G1 oder G2)"
+    },
+    {
+      "code": "GM",
+      "display": "intermediate (G2 oder G3)"
+    },
+    {
+      "code": "GH",
+      "display": "high grade (G3 oder G4)"
+    },
+    {
+      "code": "GB",
+      "display": "Borderline"
+    },
+    {
+      "code": "U",
+      "display": "unbekannt"
+    },
+    {
+      "code": "T",
+      "display": "trifft nicht zu"
+    }
+  ],
+  "count": 12
+}

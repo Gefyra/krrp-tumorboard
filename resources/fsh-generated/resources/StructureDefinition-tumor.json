@@ -1,0 +1,70 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "tumor",
+  "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tumor",
+  "name": "Tumor",
+  "title": "Tumor",
+  "status": "draft",
+  "description": "Tumor",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Specimen",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Specimen",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Specimen.identifier",
+        "path": "Specimen.identifier",
+        "short": "Histologie-Einsendenummer",
+        "mustSupport": true
+      },
+      {
+        "id": "Specimen.collection.collected[x]",
+        "path": "Specimen.collection.collected[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Specimen.collection.collected[x]:collectedDateTime",
+        "path": "Specimen.collection.collected[x]",
+        "sliceName": "collectedDateTime",
+        "short": "Tumor Histologiedatum",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

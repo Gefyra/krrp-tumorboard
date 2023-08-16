@@ -75,6 +75,30 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/histologie"
+        },
+        "name": "Histologie",
+        "description": "Histologie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/Histologie-Example"
+        },
+        "name": "HistologieExample",
+        "description": "HistologieExample",
+        "exampleCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/histologie"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/HistoGrade"
+        },
+        "name": "Histopathologische Grading Codes",
+        "description": "Die histopathologische Einstufung des invasiven Karzinoms ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/Melder"
         },
         "name": "Melder",
@@ -102,6 +126,13 @@
         },
         "name": "MelderInOrganisation-example-1",
         "exampleCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/MelderInOrganisation"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/icd-o-3-morphologie"
+        },
+        "name": "Morphologie Codes des ICD-O-3 CodeSystems.",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -299,6 +330,22 @@
         "name": "TNM Staging Method Value Set",
         "description": "Method used for TNM staging, e.g., UICC 6th, 7th, or 8th edition.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/tumor"
+        },
+        "name": "Tumor",
+        "description": "Tumor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Specimen/Tumor-Example"
+        },
+        "name": "Tumor-Example",
+        "description": "Tumor-Example",
+        "exampleCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tumor"
       },
       {
         "reference": {
