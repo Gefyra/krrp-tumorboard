@@ -31,7 +31,7 @@ jobs:
         run: |
           fhir install de.basisprofil.r4@1.4.0
           echo "Run the IG publisher..."
-          java -jar /opt/publisher/publisher.jar publisher -ig resources
+          java -Xmx4G -jar /opt/publisher/publisher.jar publisher -ig resources
           unzip resources/output/full-ig.zip -d upload/
 
 #      - name: Deploy 🚀
