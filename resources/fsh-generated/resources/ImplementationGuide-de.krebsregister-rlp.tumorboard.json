@@ -75,6 +75,30 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ecog"
+        },
+        "name": "ECOG",
+        "description": "Allgemeiner Leistungszustand: ECOG",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ecog-performance-status"
+        },
+        "name": "ECOG",
+        "description": "ECOG Performance Status (Level 0-5).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/ECOGExample"
+        },
+        "name": "ECOGExample",
+        "description": "Beispielinstanz einer Observation welche einen ECOG Wert enthält.",
+        "exampleCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/ecog"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/histologie"
         },
         "name": "Histologie",
@@ -362,6 +386,22 @@
         "name": "Tumordiagnose",
         "description": "Diagnoseinformationen (Primärtumor, frühere Tumore)",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/tumorErkrankung"
+        },
+        "name": "Tumorerkrankung",
+        "description": "Tumorerkrankung/Fall, dient als Klammer der Krebserkrankung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "EpisodeOfCare/TumorErkrankungExample"
+        },
+        "name": "TumorErkrankungExample",
+        "description": "Ein Beispiel für die Episode einer Tumorerkrankung.",
+        "exampleCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tumorErkrankung"
       },
       {
         "reference": {

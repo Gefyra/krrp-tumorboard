@@ -1,0 +1,32 @@
+{
+  "resourceType": "EpisodeOfCare",
+  "id": "TumorErkrankungExample",
+  "meta": {
+    "profile": [
+      "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tumorErkrankung"
+    ]
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "C16213",
+          "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+          "display": "Cancer Diagnosis"
+        }
+      ]
+    }
+  ],
+  "status": "active",
+  "diagnosis": [
+    {
+      "condition": {
+        "reference": "\"TODO-INSTANZs\""
+      },
+      "rank": 1
+    }
+  ],
+  "patient": {
+    "reference": "Patient/TumorPatient-example-1"
+  }
+}

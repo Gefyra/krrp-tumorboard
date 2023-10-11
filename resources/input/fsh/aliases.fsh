@@ -3,6 +3,7 @@ Alias: SCT = http://snomed.info/sct
 Alias: UICC = https://www.uicc.org/resources/tnm
 Alias: $OPS = http://fhir.de/CodeSystem/bfarm/ops
 Alias: ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
+Alias: $NCIT = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 
 Alias: $csConditionVerificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $csIcd10Gm = http://fhir.de/CodeSystem/bfarm/icd-10-gm

@@ -1,0 +1,80 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "tumorErkrankung",
+  "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tumorErkrankung",
+  "name": "TumorErkrankung",
+  "title": "Tumorerkrankung",
+  "status": "draft",
+  "description": "Tumorerkrankung/Fall, dient als Klammer der Krebserkrankung",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "EpisodeOfCare",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "EpisodeOfCare.status",
+        "path": "EpisodeOfCare.status",
+        "mustSupport": true
+      },
+      {
+        "id": "EpisodeOfCare.type",
+        "path": "EpisodeOfCare.type",
+        "min": 1,
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "C16213",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+              "display": "Cancer Diagnosis"
+            }
+          ]
+        }
+      },
+      {
+        "id": "EpisodeOfCare.diagnosis.condition",
+        "path": "EpisodeOfCare.diagnosis.condition",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Diagnose"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EpisodeOfCare.patient",
+        "path": "EpisodeOfCare.patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
