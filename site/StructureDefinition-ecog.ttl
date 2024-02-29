@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "ECOG"] ; # 
   fhir:title [ fhir:v "ECOG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-29T07:33:51+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-29T07:43:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;

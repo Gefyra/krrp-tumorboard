@@ -125,8 +125,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile",
-      "ValueSet-tnm-primary-tumor-category-max-vs.html" : "TNM Primary Tumor Maximum Value Set"
+      "ValueSet-tnm-primary-tumor-category-max-vs.html" : "TNM Primary Tumor Maximum Value Set",
+      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile"
     },
     {
       "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-staging-type-vs",
@@ -205,8 +205,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "ValueSet-tnm-stage-group-max-vs.html" : "TNM Stage Group Maximum Value Set",
-      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile"
+      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile",
+      "ValueSet-tnm-stage-group-max-vs.html" : "TNM Stage Group Maximum Value Set"
     },
     {
       "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-staging-method-vs",
@@ -218,10 +218,10 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
+      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile",
       "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile",
       "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile",
-      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile",
-      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile"
+      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile"
     },
     {
       "url" : "http://loinc.org/vs/LL529-9",
