@@ -33,7 +33,10 @@ jobs:
           echo "Run the IG publisher..."
           java -Xmx4G -jar /opt/publisher/publisher.jar publisher -ig resources
           unzip resources/output/full-ig.zip -d upload/
-
+      - name: Install rsync 📚
+        run: |
+          apt-get update && apt-get install -y rsync
+    
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
