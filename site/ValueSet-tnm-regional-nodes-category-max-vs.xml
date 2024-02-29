@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tnm-regional-nodes-category-max-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-tnm-regional-nodes-category-vs.html">TNM Regional Nodes Category Value Set</a></li><li>Include all codes defined in <code>https://www.uicc.org/resources/tnm</code></li></ul></div>
+  </text>
+  <url value="http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-regional-nodes-category-max-vs"/>
+  <version value="0.1.0"/>
+  <name value="TNMRegionalNodesCategoryMaxVS"/>
+  <title value="TNM Regional Nodes Maximum Value Set"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-02-29T07:33:51+00:00"/>
+  <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+  <contact>
+    <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.krebsregister-rlp.de/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@krebsregister-rlp.de"/>
+    </telecom>
+  </contact>
+  <description value="Values for TNM regional nodes category must be selected from this value set, which includes all codes from UICC and all codes from TNMRegionalNodesCategoryVS."/>
+  <compose>
+    <include>
+      <valueSet value="http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-regional-nodes-category-vs"/>
+    </include>
+    <include>
+      <system value="https://www.uicc.org/resources/tnm"/>
+    </include>
+  </compose>
+</ValueSet>

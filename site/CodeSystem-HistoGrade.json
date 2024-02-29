@@ -1,0 +1,81 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "HistoGrade",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/HistoGrade</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">G0<a name=\"HistoGrade-G0\"> </a></td><td>Grading nicht vorgesehen</td><td/></tr><tr><td style=\"white-space:nowrap\">G1<a name=\"HistoGrade-G1\"> </a></td><td>gut differenziert</td><td>hochdifferenzierter Tumor mit niederem Malignitätsgrad</td></tr><tr><td style=\"white-space:nowrap\">G2<a name=\"HistoGrade-G2\"> </a></td><td>mäßig differenziert</td><td>mittelhochdifferenzierter Tumor mit mittlerem Malignitätsgrad</td></tr><tr><td style=\"white-space:nowrap\">G3<a name=\"HistoGrade-G3\"> </a></td><td>schlecht / gering differenziert</td><td>wenig differenzierter Tumor mit hohem Malignitätsgrad</td></tr><tr><td style=\"white-space:nowrap\">G4<a name=\"HistoGrade-G4\"> </a></td><td>undifferenzierter Tumor mit sehr hohem Malignitätsgrad</td><td>nicht bei allen Tumorentitäten</td></tr><tr><td style=\"white-space:nowrap\">GX<a name=\"HistoGrade-GX\"> </a></td><td>nicht bestimmbar</td><td/></tr><tr><td style=\"white-space:nowrap\">GL<a name=\"HistoGrade-GL\"> </a></td><td>low grade (G1 oder G2)</td><td/></tr><tr><td style=\"white-space:nowrap\">GM<a name=\"HistoGrade-GM\"> </a></td><td>intermediate (G2 oder G3)</td><td/></tr><tr><td style=\"white-space:nowrap\">GH<a name=\"HistoGrade-GH\"> </a></td><td>high grade (G3 oder G4)</td><td/></tr><tr><td style=\"white-space:nowrap\">GB<a name=\"HistoGrade-GB\"> </a></td><td>Borderline</td><td/></tr><tr><td style=\"white-space:nowrap\">U<a name=\"HistoGrade-U\"> </a></td><td>unbekannt</td><td/></tr><tr><td style=\"white-space:nowrap\">T<a name=\"HistoGrade-T\"> </a></td><td>trifft nicht zu</td><td/></tr></table></div>"
+  },
+  "url" : "http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/HistoGrade",
+  "version" : "0.1.0",
+  "name" : "HistoGrade",
+  "title" : "Histopathologische Grading Codes",
+  "status" : "draft",
+  "date" : "2024-02-29T07:33:51+00:00",
+  "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+  "contact" : [{
+    "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.krebsregister-rlp.de/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@krebsregister-rlp.de"
+    }]
+  }],
+  "description" : "Die histopathologische Einstufung des invasiven Karzinoms ",
+  "content" : "complete",
+  "count" : 12,
+  "concept" : [{
+    "code" : "G0",
+    "display" : "Grading nicht vorgesehen"
+  },
+  {
+    "code" : "G1",
+    "display" : "gut differenziert",
+    "definition" : "hochdifferenzierter Tumor mit niederem Malignitätsgrad"
+  },
+  {
+    "code" : "G2",
+    "display" : "mäßig differenziert",
+    "definition" : "mittelhochdifferenzierter Tumor mit mittlerem Malignitätsgrad"
+  },
+  {
+    "code" : "G3",
+    "display" : "schlecht / gering differenziert",
+    "definition" : "wenig differenzierter Tumor mit hohem Malignitätsgrad"
+  },
+  {
+    "code" : "G4",
+    "display" : "undifferenzierter Tumor mit sehr hohem Malignitätsgrad",
+    "definition" : "nicht bei allen Tumorentitäten"
+  },
+  {
+    "code" : "GX",
+    "display" : "nicht bestimmbar"
+  },
+  {
+    "code" : "GL",
+    "display" : "low grade (G1 oder G2)"
+  },
+  {
+    "code" : "GM",
+    "display" : "intermediate (G2 oder G3)"
+  },
+  {
+    "code" : "GH",
+    "display" : "high grade (G3 oder G4)"
+  },
+  {
+    "code" : "GB",
+    "display" : "Borderline"
+  },
+  {
+    "code" : "U",
+    "display" : "unbekannt"
+  },
+  {
+    "code" : "T",
+    "display" : "trifft nicht zu"
+  }]
+}

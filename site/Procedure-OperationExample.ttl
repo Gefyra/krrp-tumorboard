@@ -1,0 +1,29 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://krebsregister-rlp.de/fhir/tumorboard/Procedure/OperationExample> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OperationExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation"^^xsd:anyURI ;
+       fhir:link <http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"OperationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;OperationExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-operation.html\">Operation</a></p></div><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"Patient-TumorPatient-example-1.html\">Patient/TumorPatient-example-1</a> &quot; MUSTERMANN&quot;</p><p><b>performed</b>: 2023-06-07</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:subject [
+     fhir:link <http://krebsregister-rlp.de/fhir/tumorboard/Patient/TumorPatient-example-1> ;
+     fhir:reference [ fhir:v "Patient/TumorPatient-example-1" ]
+  ] ; # 
+  fhir:performed [ fhir:v "2023-06-07"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

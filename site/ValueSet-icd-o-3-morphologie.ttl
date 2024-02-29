@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/icd-o-3-morphologie> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "icd-o-3-morphologie"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html\"><code>http://terminology.hl7.org/CodeSystem/icd-o-3</code></a> where concept  matches (by regex)  ^\\d\\S*$</li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/icd-o-3-morphologie"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ICDO3Morphologie"] ; # 
+  fhir:title [ fhir:v "Morphologie Codes des ICD-O-3 CodeSystems."] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-02-29T07:33:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.krebsregister-rlp.de/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@krebsregister-rlp.de" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/icd-o-3"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "regex" ] ;
+         fhir:value [ fhir:v "^\\d\\S*$" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Observation",
+  "id" : "Histologie-Example",
+  "meta" : {
+    "profile" : ["http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/histologie"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Histologie-Example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Histologie-Example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-histologie.html\">Histologie</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Freitext <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html\">International Classification of Diseases for Oncology, version 3.</a>; <a href=\"https://loinc.org/\">LOINC</a>#59847-4)</span></p><p><b>subject</b>: <a href=\"Patient-TumorPatient-example-1.html\">Patient/TumorPatient-example-1</a> &quot; MUSTERMANN&quot;</p><p><b>focus</b>: <a href=\"Specimen-Tumor-Example.html\">Specimen/Tumor-Example</a></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "59847-4"
+    }],
+    "text" : "Freitext"
+  },
+  "subject" : {
+    "reference" : "Patient/TumorPatient-example-1"
+  },
+  "focus" : [{
+    "reference" : "Specimen/Tumor-Example"
+  }]
+}

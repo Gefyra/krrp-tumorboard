@@ -1,0 +1,239 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/iso3166-1-2",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Iso3166-1-2",
+      "title" : "Iso 3166 Part 1: 2 Letter Codes",
+      "description" : "This value set defines the ISO 3166 Part 1 2-letter codes",
+      "systems" : ["urn:iso:std:iso:3166"],
+      "uses" : {
+      },
+      "StructureDefinition-TumorPatient.html" : "Tumor-Patient"
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-stage-group-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CancerStageVS",
+      "title" : "Cancer Stage Group Value Set",
+      "description" : "The result of cancer staging, i.e., the stage or category of the cancer.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-cancer-stage-group.html" : "Cancer Stage Group Profile"
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-staging-method-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CancerStagingMethodVS",
+      "title" : "Cancer Staging Method Value Set",
+      "description" : "System or method used for staging cancers. The terms in this value set describe staging systems, not specific stages or descriptors used within those systems.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-cancer-stage-group.html" : "Cancer Stage Group Profile"
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-staging-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CancerStagingTypeVS",
+      "title" : "Cancer Staging Type Value Set",
+      "description" : "Identifying codes for the type of cancer staging performed. In terms of the SNOMED CT hierarchy, these codes represent observables.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-cancer-stage-group.html" : "Cancer Stage Group Profile"
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/icd-o-3-morphologie",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ICDO3Morphologie",
+      "title" : "Morphologie Codes des ICD-O-3 CodeSystems.",
+      "description" : null,
+      "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"]
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/obds-op-komplikation-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ObdsOpKomplikationVS",
+      "title" : "oBDS Operation Komplikation Value Set",
+      "description" : "Komplikation gemäß Vorgabe oBDS.",
+      "systems" : [
+        "http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/obds-op-komplikation-cs",
+        "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-operation.html" : "Operation"
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-distant-metastases-category-max-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TNMDistantMetastasesCategoryMaxVS",
+      "title" : "TNM Distant Metastases Maximum Value Set",
+      "description" : "Values for TNM distant metastases category must be selected from this value set, which includes all codes from UICC and all codes from TNMDistantMetastasesCategoryVS.",
+      "systems" : ["https://www.uicc.org/resources/tnm", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-distant-metastases-category-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TNMDistantMetastasesCategoryVS",
+      "title" : "TNM Distant Metastases Category Value Set",
+      "description" : "Result values for M category. This value set contains SNOMED-CT equivalents of UICC codes for the M category, according to TNM staging rules.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile",
+      "ValueSet-tnm-distant-metastases-category-max-vs.html" : "TNM Distant Metastases Maximum Value Set"
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-distant-metastases-staging-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TNMDistantMetastasesStagingTypeVS",
+      "title" : "TNM Distant Metastases Staging Type Value Set",
+      "description" : "Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for distant metastases (M) staging observation.",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile"
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-category-max-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TNMPrimaryTumorCategoryMaxVS",
+      "title" : "TNM Primary Tumor Maximum Value Set",
+      "description" : "Values for TNM primary tumor category must be selected from this value set, which includes all codes from UICC and all codes from TNMPrimaryTumorCategoryVS.",
+      "systems" : ["https://www.uicc.org/resources/tnm", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-category-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TNMPrimaryTumorCategoryVS",
+      "title" : "TNM Primary Tumor Category Value Set",
+      "description" : "Result values for T category. This value set contains SNOMED-CT equivalents of UICC codes for the T category, according to TNM staging rules.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile",
+      "ValueSet-tnm-primary-tumor-category-max-vs.html" : "TNM Primary Tumor Maximum Value Set"
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-staging-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TNMPrimaryTumorStagingTypeVS",
+      "title" : "TNM Primary Tumor Staging Type Value Set",
+      "description" : "Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for primary tumor (T) staging observation.",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile"
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-regional-nodes-category-max-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TNMRegionalNodesCategoryMaxVS",
+      "title" : "TNM Regional Nodes Maximum Value Set",
+      "description" : "Values for TNM regional nodes category must be selected from this value set, which includes all codes from UICC and all codes from TNMRegionalNodesCategoryVS.",
+      "systems" : ["https://www.uicc.org/resources/tnm", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-regional-nodes-category-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TNMRegionalNodesCategoryVS",
+      "title" : "TNM Regional Nodes Category Value Set",
+      "description" : "Result values for N category. This value set contains SNOMED-CT equivalents of UICC codes for the N category, according to TNM staging rules.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "ValueSet-tnm-regional-nodes-category-max-vs.html" : "TNM Regional Nodes Maximum Value Set",
+      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile"
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-regional-nodes-staging-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TNMRegionalNodesStagingTypeVS",
+      "title" : "TNM Regional Nodes Staging Type Value Set",
+      "description" : "Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for regional nodes (N) staging observation.",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile"
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-max-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TNMStageGroupMaxVS",
+      "title" : "TNM Stage Group Maximum Value Set",
+      "description" : "Values for TNM stage group must be selected from this value set, which includes all codes from UICC and all codes from TNMStageGroupVS.",
+      "systems" : ["https://www.uicc.org/resources/tnm", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-staging-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TNMStageGroupStagingTypeVS",
+      "title" : "TNM Stage Group Staging Type Value Set",
+      "description" : "Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for the stage group observation.",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile"
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TNMStageGroupVS",
+      "title" : "TNM Stage Group Value Set",
+      "description" : "Result values for cancer stage group using TNM staging. This value set contains SNOMED-CT equivalents of UICC codes for Stage Group, according to TNM staging rules.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "ValueSet-tnm-stage-group-max-vs.html" : "TNM Stage Group Maximum Value Set",
+      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile"
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-staging-method-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TNMStagingMethodVS",
+      "title" : "TNM Staging Method Value Set",
+      "description" : "Method used for TNM staging, e.g., UICC 6th, 7th, or 8th edition.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile",
+      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile",
+      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile",
+      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile"
+    },
+    {
+      "url" : "http://loinc.org/vs/LL529-9",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ECOGPerformanceStatusVS",
+      "title" : "ECOG",
+      "description" : "ECOG Performance Status (Level 0-5).",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-ecog.html" : "ECOG"
+    }
+  ]
+}

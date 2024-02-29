@@ -1,0 +1,85 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "ICD10GM",
+      "title" : null,
+      "description" : "ICD-10-GM Platzhalter-CodeSystem",
+      "uses" : {
+      },
+      "ValueSet-obds-op-komplikation-vs.html" : "oBDS Operation Komplikation Value Set"
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/obds-op-komplikation-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ObdsOpKomplikationCS",
+      "title" : "oBDS Operation Komplikation Codesystem",
+      "description" : "Komplikation gemäß Vorgabe oBDS.",
+      "uses" : {
+      },
+      "ValueSet-obds-op-komplikation-vs.html" : "oBDS Operation Komplikation Value Set"
+    },
+    {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "ValueSet-tnm-regional-nodes-staging-type-vs.html" : "TNM Regional Nodes Staging Type Value Set",
+      "ValueSet-tnm-primary-tumor-staging-type-vs.html" : "TNM Primary Tumor Staging Type Value Set",
+      "ValueSet-ecog-performance-status.html" : "ECOG",
+      "ValueSet-tnm-distant-metastases-staging-type-vs.html" : "TNM Distant Metastases Staging Type Value Set",
+      "ValueSet-tnm-stage-group-staging-type-vs.html" : "TNM Stage Group Staging Type Value Set"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "ValueSet-cancer-staging-method-vs.html" : "Cancer Staging Method Value Set",
+      "ValueSet-tnm-regional-nodes-category-vs.html" : "TNM Regional Nodes Category Value Set",
+      "ValueSet-tnm-distant-metastases-category-vs.html" : "TNM Distant Metastases Category Value Set",
+      "ValueSet-cancer-stage-group-vs.html" : "Cancer Stage Group Value Set",
+      "ValueSet-cancer-staging-type-vs.html" : "Cancer Staging Type Value Set",
+      "ValueSet-tnm-stage-group-vs.html" : "TNM Stage Group Value Set",
+      "ValueSet-tnm-primary-tumor-category-vs.html" : "TNM Primary Tumor Category Value Set",
+      "ValueSet-tnm-staging-method-vs.html" : "TNM Staging Method Value Set"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "IcdO3",
+      "title" : "International Classification of Diseases for Oncology, version 3.",
+      "description" : "International Classification of Diseases for Oncology, version 3. For more information see http://www.who.int/classifications/icd/adaptations/oncology/en/.",
+      "oids" : ["2.16.840.1.113883.6.43.1"],
+      "uses" : {
+      },
+      "ValueSet-icd-o-3-morphologie.html" : "Morphologie Codes des ICD-O-3 CodeSystems."
+    },
+    {
+      "url" : "urn:iso:std:iso:3166",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ISO3166Part1",
+      "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
+      "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
+      "oids" : ["1.0.3166.1"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-iso3166-1-2.html" : "Iso 3166 Part 1: 2 Letter Codes"
+    }
+  ]
+}

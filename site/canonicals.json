@@ -1,0 +1,268 @@
+[
+  {
+    "id" : "HistoGrade",
+    "type" : "CodeSystem",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/HistoGrade",
+    "version" : "0.1.0",
+    "name" : "HistoGrade"
+  },
+  {
+    "id" : "obds-op-komplikation-cs",
+    "type" : "CodeSystem",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/obds-op-komplikation-cs",
+    "version" : "0.1.0",
+    "name" : "ObdsOpKomplikationCS"
+  },
+  {
+    "id" : "de.krebsregister-rlp.tumorboard",
+    "type" : "ImplementationGuide",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ImplementationGuide/de.krebsregister-rlp.tumorboard",
+    "version" : "0.1.0",
+    "name" : "TumorBoardRLP"
+  },
+  {
+    "id" : "Diagnose",
+    "type" : "StructureDefinition",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Diagnose",
+    "version" : "0.1.0",
+    "name" : "TumorDiagnose"
+  },
+  {
+    "id" : "Melder",
+    "type" : "StructureDefinition",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Melder",
+    "version" : "0.1.0",
+    "name" : "Melder"
+  },
+  {
+    "id" : "MelderInOrganisation",
+    "type" : "StructureDefinition",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/MelderInOrganisation",
+    "version" : "0.1.0",
+    "name" : "MelderInOrganisation"
+  },
+  {
+    "id" : "Organisation",
+    "type" : "StructureDefinition",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Organisation",
+    "version" : "0.1.0",
+    "name" : "Organisation"
+  },
+  {
+    "id" : "TumorPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient",
+    "version" : "0.1.0",
+    "name" : "TumorPatient"
+  },
+  {
+    "id" : "cancer-stage-group",
+    "type" : "StructureDefinition",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/cancer-stage-group",
+    "version" : "0.1.0",
+    "name" : "CancerStageGroup"
+  },
+  {
+    "id" : "ecog",
+    "type" : "StructureDefinition",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/ecog",
+    "version" : "0.1.0",
+    "name" : "ECOG"
+  },
+  {
+    "id" : "histologie",
+    "type" : "StructureDefinition",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/histologie",
+    "version" : "0.1.0",
+    "name" : "Histologie"
+  },
+  {
+    "id" : "operation",
+    "type" : "StructureDefinition",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation",
+    "version" : "0.1.0",
+    "name" : "Operation"
+  },
+  {
+    "id" : "operation-einzelprozedur",
+    "type" : "StructureDefinition",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation-einzelprozedur",
+    "version" : "0.1.0",
+    "name" : "OperationEinzelprozedur"
+  },
+  {
+    "id" : "tnm-distant-metastases-category",
+    "type" : "StructureDefinition",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tnm-distant-metastases-category",
+    "version" : "0.1.0",
+    "name" : "TNMDistantMetastasesCategory"
+  },
+  {
+    "id" : "tnm-primary-tumor-category",
+    "type" : "StructureDefinition",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tnm-primary-tumor-category",
+    "version" : "0.1.0",
+    "name" : "TNMPrimaryTumorCategory"
+  },
+  {
+    "id" : "tnm-regional-nodes-category",
+    "type" : "StructureDefinition",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tnm-regional-nodes-category",
+    "version" : "0.1.0",
+    "name" : "TNMRegionalNodesCategory"
+  },
+  {
+    "id" : "tnm-stage-group",
+    "type" : "StructureDefinition",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tnm-stage-group",
+    "version" : "0.1.0",
+    "name" : "TNMStageGroup"
+  },
+  {
+    "id" : "tumor",
+    "type" : "StructureDefinition",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tumor",
+    "version" : "0.1.0",
+    "name" : "Tumor"
+  },
+  {
+    "id" : "tumorErkrankung",
+    "type" : "StructureDefinition",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tumorErkrankung",
+    "version" : "0.1.0",
+    "name" : "TumorErkrankung"
+  },
+  {
+    "id" : "cancer-stage-group-vs",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-stage-group-vs",
+    "version" : "0.1.0",
+    "name" : "CancerStageVS"
+  },
+  {
+    "id" : "cancer-staging-method-vs",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-staging-method-vs",
+    "version" : "0.1.0",
+    "name" : "CancerStagingMethodVS"
+  },
+  {
+    "id" : "cancer-staging-type-vs",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-staging-type-vs",
+    "version" : "0.1.0",
+    "name" : "CancerStagingTypeVS"
+  },
+  {
+    "id" : "icd-o-3-morphologie",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/icd-o-3-morphologie",
+    "version" : "0.1.0",
+    "name" : "ICDO3Morphologie"
+  },
+  {
+    "id" : "obds-op-komplikation-vs",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/obds-op-komplikation-vs",
+    "version" : "0.1.0",
+    "name" : "ObdsOpKomplikationVS"
+  },
+  {
+    "id" : "tnm-distant-metastases-category-max-vs",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-distant-metastases-category-max-vs",
+    "version" : "0.1.0",
+    "name" : "TNMDistantMetastasesCategoryMaxVS"
+  },
+  {
+    "id" : "tnm-distant-metastases-category-vs",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-distant-metastases-category-vs",
+    "version" : "0.1.0",
+    "name" : "TNMDistantMetastasesCategoryVS"
+  },
+  {
+    "id" : "tnm-distant-metastases-staging-type-vs",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-distant-metastases-staging-type-vs",
+    "version" : "0.1.0",
+    "name" : "TNMDistantMetastasesStagingTypeVS"
+  },
+  {
+    "id" : "tnm-primary-tumor-category-max-vs",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-category-max-vs",
+    "version" : "0.1.0",
+    "name" : "TNMPrimaryTumorCategoryMaxVS"
+  },
+  {
+    "id" : "tnm-primary-tumor-category-vs",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-category-vs",
+    "version" : "0.1.0",
+    "name" : "TNMPrimaryTumorCategoryVS"
+  },
+  {
+    "id" : "tnm-primary-tumor-staging-type-vs",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-staging-type-vs",
+    "version" : "0.1.0",
+    "name" : "TNMPrimaryTumorStagingTypeVS"
+  },
+  {
+    "id" : "tnm-regional-nodes-category-max-vs",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-regional-nodes-category-max-vs",
+    "version" : "0.1.0",
+    "name" : "TNMRegionalNodesCategoryMaxVS"
+  },
+  {
+    "id" : "tnm-regional-nodes-category-vs",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-regional-nodes-category-vs",
+    "version" : "0.1.0",
+    "name" : "TNMRegionalNodesCategoryVS"
+  },
+  {
+    "id" : "tnm-regional-nodes-staging-type-vs",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-regional-nodes-staging-type-vs",
+    "version" : "0.1.0",
+    "name" : "TNMRegionalNodesStagingTypeVS"
+  },
+  {
+    "id" : "tnm-stage-group-max-vs",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-max-vs",
+    "version" : "0.1.0",
+    "name" : "TNMStageGroupMaxVS"
+  },
+  {
+    "id" : "tnm-stage-group-staging-type-vs",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-staging-type-vs",
+    "version" : "0.1.0",
+    "name" : "TNMStageGroupStagingTypeVS"
+  },
+  {
+    "id" : "tnm-stage-group-vs",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-vs",
+    "version" : "0.1.0",
+    "name" : "TNMStageGroupVS"
+  },
+  {
+    "id" : "tnm-staging-method-vs",
+    "type" : "ValueSet",
+    "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-staging-method-vs",
+    "version" : "0.1.0",
+    "name" : "TNMStagingMethodVS"
+  },
+  {
+    "id" : "ecog-performance-status",
+    "type" : "ValueSet",
+    "url" : "http://loinc.org/vs/LL529-9",
+    "version" : "0.1.0",
+    "name" : "ECOGPerformanceStatusVS"
+  }
+]

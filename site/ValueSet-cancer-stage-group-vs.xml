@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cancer-stage-group-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222585009 (American Joint Committee on Cancer clinical T category allowable value (qualifier value))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222587001 (American Joint Committee on Cancer clinical M category allowable value (qualifier value))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222588006 (American Joint Committee on Cancer clinical N category allowable value (qualifier value))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222589003 (American Joint Committee on Cancer pathological T category allowable value (qualifier value))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222590007 (American Joint Committee on Cancer pathological N category allowable value (qualifier value))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222591006 (American Joint Committee on Cancer pathological M category allowable value (qualifier value))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222592004 (American Joint Committee on Cancer clinical stage group allowable value)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222593009 (American Joint Committee on Cancer pathological stage group allowable value (qualifier value))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222594003 (American Joint Committee on Cancer yp stage group allowable value (qualifier value))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222595002 (American Joint Committee on Cancer ypT category allowable value (qualifier value))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222596001 (American Joint Committee on Cancer ypN category allowable value (qualifier value))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222598000 (American Joint Committee on Cancer clinical grade allowable value)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222599008 (American Joint Committee on Cancer pathological grade allowable value (qualifier value))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222600006 (American Joint Committee on Cancer yp grade allowable value)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222601005 (American Joint Committee on Cancer residual tumour allowable value)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  258318002 (Generic anatomical site tumor invasion status)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  258309004 (Generic lymph node tumor invasion status stage (tumor staging))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  258233007 (Generic tumor staging descriptor (tumor staging))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  258271004 (Specific tumor staging descriptor (tumor staging))</li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/42114005">42114005</a></td><td>Walter Reed stage 1 (tumor staging)</td></tr><tr><td><a href="http://snomed.info/id/15972002">15972002</a></td><td>Walter Reed stage 2 (tumor staging)</td></tr><tr><td><a href="http://snomed.info/id/13808002">13808002</a></td><td>Walter Reed stage 3 (tumor staging)</td></tr><tr><td><a href="http://snomed.info/id/74542008">74542008</a></td><td>Walter Reed stage 4 (tumor staging)</td></tr><tr><td><a href="http://snomed.info/id/66470009">66470009</a></td><td>Walter Reed stage 5 (tumor staging)</td></tr><tr><td><a href="http://snomed.info/id/83200007">83200007</a></td><td>Walter Reed stage 6 (tumor staging)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-stage-group-vs"/>
+  <version value="0.1.0"/>
+  <name value="CancerStageVS"/>
+  <title value="Cancer Stage Group Value Set"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-02-29T07:33:51+00:00"/>
+  <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+  <contact>
+    <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.krebsregister-rlp.de/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@krebsregister-rlp.de"/>
+    </telecom>
+  </contact>
+  <description value="The result of cancer staging, i.e., the stage or category of the cancer."/>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="1222585009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="1222587001"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="1222588006"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="1222589003"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="1222590007"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="1222591006"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="1222592004"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="1222593009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="1222594003"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="1222595002"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="1222596001"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="1222598000"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="1222599008"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="1222600006"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="1222601005"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="258318002"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="258309004"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="258233007"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="258271004"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="42114005"/>
+        <display value="Walter Reed stage 1 (tumor staging)"/>
+      </concept>
+      <concept>
+        <code value="15972002"/>
+        <display value="Walter Reed stage 2 (tumor staging)"/>
+      </concept>
+      <concept>
+        <code value="13808002"/>
+        <display value="Walter Reed stage 3 (tumor staging)"/>
+      </concept>
+      <concept>
+        <code value="74542008"/>
+        <display value="Walter Reed stage 4 (tumor staging)"/>
+      </concept>
+      <concept>
+        <code value="66470009"/>
+        <display value="Walter Reed stage 5 (tumor staging)"/>
+      </concept>
+      <concept>
+        <code value="83200007"/>
+        <display value="Walter Reed stage 6 (tumor staging)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

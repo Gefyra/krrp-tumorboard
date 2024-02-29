@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-staging-method-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tnm-staging-method-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/444256004\">444256004</a></td><td>American Joint Commission on Cancer, Cancer Staging Manual, 6th edition neoplasm staging system (tumor staging)</td></tr><tr><td><a href=\"http://snomed.info/id/443830009\">443830009</a></td><td>American Joint Commission on Cancer, Cancer Staging Manual, 7th edition neoplasm staging system (tumor staging)</td></tr><tr><td><a href=\"http://snomed.info/id/897275008\">897275008</a></td><td>American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-staging-method-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "TNMStagingMethodVS"] ; # 
+  fhir:title [ fhir:v "TNM Staging Method Value Set"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-02-29T07:33:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.krebsregister-rlp.de/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@krebsregister-rlp.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Method used for TNM staging, e.g., UICC 6th, 7th, or 8th edition."] ; # 
+  fhir:copyright [ fhir:v "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "444256004" ] ;
+         fhir:display [ fhir:v "American Joint Commission on Cancer, Cancer Staging Manual, 6th edition neoplasm staging system (tumor staging)" ]
+       ] [
+         fhir:code [ fhir:v "443830009" ] ;
+         fhir:display [ fhir:v "American Joint Commission on Cancer, Cancer Staging Manual, 7th edition neoplasm staging system (tumor staging)" ]
+       ] [
+         fhir:code [ fhir:v "897275008" ] ;
+         fhir:display [ fhir:v "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

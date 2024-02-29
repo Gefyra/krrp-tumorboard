@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="HistoGrade"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This  code system <code>http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/HistoGrade</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">G0<a name="HistoGrade-G0"> </a></td><td>Grading nicht vorgesehen</td><td/></tr><tr><td style="white-space:nowrap">G1<a name="HistoGrade-G1"> </a></td><td>gut differenziert</td><td>hochdifferenzierter Tumor mit niederem Malignitätsgrad</td></tr><tr><td style="white-space:nowrap">G2<a name="HistoGrade-G2"> </a></td><td>mäßig differenziert</td><td>mittelhochdifferenzierter Tumor mit mittlerem Malignitätsgrad</td></tr><tr><td style="white-space:nowrap">G3<a name="HistoGrade-G3"> </a></td><td>schlecht / gering differenziert</td><td>wenig differenzierter Tumor mit hohem Malignitätsgrad</td></tr><tr><td style="white-space:nowrap">G4<a name="HistoGrade-G4"> </a></td><td>undifferenzierter Tumor mit sehr hohem Malignitätsgrad</td><td>nicht bei allen Tumorentitäten</td></tr><tr><td style="white-space:nowrap">GX<a name="HistoGrade-GX"> </a></td><td>nicht bestimmbar</td><td/></tr><tr><td style="white-space:nowrap">GL<a name="HistoGrade-GL"> </a></td><td>low grade (G1 oder G2)</td><td/></tr><tr><td style="white-space:nowrap">GM<a name="HistoGrade-GM"> </a></td><td>intermediate (G2 oder G3)</td><td/></tr><tr><td style="white-space:nowrap">GH<a name="HistoGrade-GH"> </a></td><td>high grade (G3 oder G4)</td><td/></tr><tr><td style="white-space:nowrap">GB<a name="HistoGrade-GB"> </a></td><td>Borderline</td><td/></tr><tr><td style="white-space:nowrap">U<a name="HistoGrade-U"> </a></td><td>unbekannt</td><td/></tr><tr><td style="white-space:nowrap">T<a name="HistoGrade-T"> </a></td><td>trifft nicht zu</td><td/></tr></table></div>
+  </text>
+  <url value="http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/HistoGrade"/>
+  <version value="0.1.0"/>
+  <name value="HistoGrade"/>
+  <title value="Histopathologische Grading Codes"/>
+  <status value="draft"/>
+  <date value="2024-02-29T07:33:51+00:00"/>
+  <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+  <contact>
+    <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.krebsregister-rlp.de/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@krebsregister-rlp.de"/>
+    </telecom>
+  </contact>
+  <description value="Die histopathologische Einstufung des invasiven Karzinoms "/>
+  <content value="complete"/>
+  <count value="12"/>
+  <concept>
+    <code value="G0"/>
+    <display value="Grading nicht vorgesehen"/>
+  </concept>
+  <concept>
+    <code value="G1"/>
+    <display value="gut differenziert"/>
+    <definition value="hochdifferenzierter Tumor mit niederem Malignitätsgrad"/>
+  </concept>
+  <concept>
+    <code value="G2"/>
+    <display value="mäßig differenziert"/>
+    <definition value="mittelhochdifferenzierter Tumor mit mittlerem Malignitätsgrad"/>
+  </concept>
+  <concept>
+    <code value="G3"/>
+    <display value="schlecht / gering differenziert"/>
+    <definition value="wenig differenzierter Tumor mit hohem Malignitätsgrad"/>
+  </concept>
+  <concept>
+    <code value="G4"/>
+    <display value="undifferenzierter Tumor mit sehr hohem Malignitätsgrad"/>
+    <definition value="nicht bei allen Tumorentitäten"/>
+  </concept>
+  <concept>
+    <code value="GX"/>
+    <display value="nicht bestimmbar"/>
+  </concept>
+  <concept>
+    <code value="GL"/>
+    <display value="low grade (G1 oder G2)"/>
+  </concept>
+  <concept>
+    <code value="GM"/>
+    <display value="intermediate (G2 oder G3)"/>
+  </concept>
+  <concept>
+    <code value="GH"/>
+    <display value="high grade (G3 oder G4)"/>
+  </concept>
+  <concept>
+    <code value="GB"/>
+    <display value="Borderline"/>
+  </concept>
+  <concept>
+    <code value="U"/>
+    <display value="unbekannt"/>
+  </concept>
+  <concept>
+    <code value="T"/>
+    <display value="trifft nicht zu"/>
+  </concept>
+</CodeSystem>

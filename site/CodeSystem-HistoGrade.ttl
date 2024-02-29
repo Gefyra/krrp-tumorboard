@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/HistoGrade> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HistoGrade"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/HistoGrade</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">G0<a name=\"HistoGrade-G0\"> </a></td><td>Grading nicht vorgesehen</td><td/></tr><tr><td style=\"white-space:nowrap\">G1<a name=\"HistoGrade-G1\"> </a></td><td>gut differenziert</td><td>hochdifferenzierter Tumor mit niederem Malignitätsgrad</td></tr><tr><td style=\"white-space:nowrap\">G2<a name=\"HistoGrade-G2\"> </a></td><td>mäßig differenziert</td><td>mittelhochdifferenzierter Tumor mit mittlerem Malignitätsgrad</td></tr><tr><td style=\"white-space:nowrap\">G3<a name=\"HistoGrade-G3\"> </a></td><td>schlecht / gering differenziert</td><td>wenig differenzierter Tumor mit hohem Malignitätsgrad</td></tr><tr><td style=\"white-space:nowrap\">G4<a name=\"HistoGrade-G4\"> </a></td><td>undifferenzierter Tumor mit sehr hohem Malignitätsgrad</td><td>nicht bei allen Tumorentitäten</td></tr><tr><td style=\"white-space:nowrap\">GX<a name=\"HistoGrade-GX\"> </a></td><td>nicht bestimmbar</td><td/></tr><tr><td style=\"white-space:nowrap\">GL<a name=\"HistoGrade-GL\"> </a></td><td>low grade (G1 oder G2)</td><td/></tr><tr><td style=\"white-space:nowrap\">GM<a name=\"HistoGrade-GM\"> </a></td><td>intermediate (G2 oder G3)</td><td/></tr><tr><td style=\"white-space:nowrap\">GH<a name=\"HistoGrade-GH\"> </a></td><td>high grade (G3 oder G4)</td><td/></tr><tr><td style=\"white-space:nowrap\">GB<a name=\"HistoGrade-GB\"> </a></td><td>Borderline</td><td/></tr><tr><td style=\"white-space:nowrap\">U<a name=\"HistoGrade-U\"> </a></td><td>unbekannt</td><td/></tr><tr><td style=\"white-space:nowrap\">T<a name=\"HistoGrade-T\"> </a></td><td>trifft nicht zu</td><td/></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/HistoGrade"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "HistoGrade"] ; # 
+  fhir:title [ fhir:v "Histopathologische Grading Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-02-29T07:33:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.krebsregister-rlp.de/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@krebsregister-rlp.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Die histopathologische Einstufung des invasiven Karzinoms "] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "12"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "G0" ] ;
+     fhir:display [ fhir:v "Grading nicht vorgesehen" ]
+  ] [
+     fhir:code [ fhir:v "G1" ] ;
+     fhir:display [ fhir:v "gut differenziert" ] ;
+     fhir:definition [ fhir:v "hochdifferenzierter Tumor mit niederem Malignitätsgrad" ]
+  ] [
+     fhir:code [ fhir:v "G2" ] ;
+     fhir:display [ fhir:v "mäßig differenziert" ] ;
+     fhir:definition [ fhir:v "mittelhochdifferenzierter Tumor mit mittlerem Malignitätsgrad" ]
+  ] [
+     fhir:code [ fhir:v "G3" ] ;
+     fhir:display [ fhir:v "schlecht / gering differenziert" ] ;
+     fhir:definition [ fhir:v "wenig differenzierter Tumor mit hohem Malignitätsgrad" ]
+  ] [
+     fhir:code [ fhir:v "G4" ] ;
+     fhir:display [ fhir:v "undifferenzierter Tumor mit sehr hohem Malignitätsgrad" ] ;
+     fhir:definition [ fhir:v "nicht bei allen Tumorentitäten" ]
+  ] [
+     fhir:code [ fhir:v "GX" ] ;
+     fhir:display [ fhir:v "nicht bestimmbar" ]
+  ] [
+     fhir:code [ fhir:v "GL" ] ;
+     fhir:display [ fhir:v "low grade (G1 oder G2)" ]
+  ] [
+     fhir:code [ fhir:v "GM" ] ;
+     fhir:display [ fhir:v "intermediate (G2 oder G3)" ]
+  ] [
+     fhir:code [ fhir:v "GH" ] ;
+     fhir:display [ fhir:v "high grade (G3 oder G4)" ]
+  ] [
+     fhir:code [ fhir:v "GB" ] ;
+     fhir:display [ fhir:v "Borderline" ]
+  ] [
+     fhir:code [ fhir:v "U" ] ;
+     fhir:display [ fhir:v "unbekannt" ]
+  ] [
+     fhir:code [ fhir:v "T" ] ;
+     fhir:display [ fhir:v "trifft nicht zu" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

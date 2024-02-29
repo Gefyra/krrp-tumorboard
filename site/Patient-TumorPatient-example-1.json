@@ -1,0 +1,48 @@
+{
+  "resourceType" : "Patient",
+  "id" : "TumorPatient-example-1",
+  "meta" : {
+    "profile" : ["http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Martina Mustermann (OFFICIAL)</b> female, DoB: 1965-04-03 ( Gesetzliche Krankenversicherung:\u00a0GkvKvid10#A123456789)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Musterfrau (MAIDEN)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">Musterweg 22 Musterstadt 12345 DE </td></tr></table></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://fhir.de/CodeSystem/identifier-type-de-basis",
+        "code" : "GKV"
+      }]
+    },
+    "system" : "http://fhir.de/sid/gkv/kvid-10",
+    "value" : "A123456789"
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Mustermann",
+    "given" : ["Martina"]
+  },
+  {
+    "use" : "maiden",
+    "family" : "Musterfrau"
+  }],
+  "gender" : "female",
+  "birthDate" : "1965-04-03",
+  "address" : [{
+    "line" : ["Musterweg 22"],
+    "_line" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+        "valueString" : "Musterweg"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+        "valueString" : "22"
+      }]
+    }],
+    "city" : "Musterstadt",
+    "postalCode" : "12345",
+    "country" : "DE"
+  }]
+}

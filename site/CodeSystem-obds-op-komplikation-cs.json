@@ -1,0 +1,345 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "obds-op-komplikation-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/obds-op-komplikation-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"obds-op-komplikation-cs-N\"> </a></td><td>nein</td></tr><tr><td style=\"white-space:nowrap\">U<a name=\"obds-op-komplikation-cs-U\"> </a></td><td>unbekannt</td></tr><tr><td style=\"white-space:nowrap\">ABD<a name=\"obds-op-komplikation-cs-ABD\"> </a></td><td>Abszess in einem Drainagekanal</td></tr><tr><td style=\"white-space:nowrap\">ABS<a name=\"obds-op-komplikation-cs-ABS\"> </a></td><td>Abszess, intraabdominaler oder intrathorakaler</td></tr><tr><td style=\"white-space:nowrap\">ASF<a name=\"obds-op-komplikation-cs-ASF\"> </a></td><td>Abszess, subfaszialer</td></tr><tr><td style=\"white-space:nowrap\">ANI<a name=\"obds-op-komplikation-cs-ANI\"> </a></td><td>Akute Niereninsuffizienz</td></tr><tr><td style=\"white-space:nowrap\">AEP<a name=\"obds-op-komplikation-cs-AEP\"> </a></td><td>Alkoholentzugspsychose</td></tr><tr><td style=\"white-space:nowrap\">ALR<a name=\"obds-op-komplikation-cs-ALR\"> </a></td><td>Allergische Reaktion ohne Schocksymptomatik</td></tr><tr><td style=\"white-space:nowrap\">ANS<a name=\"obds-op-komplikation-cs-ANS\"> </a></td><td>Anaphylaktischer Schock</td></tr><tr><td style=\"white-space:nowrap\">AEE<a name=\"obds-op-komplikation-cs-AEE\"> </a></td><td>Anastomoseninsuffizienz einer Enterostomie</td></tr><tr><td style=\"white-space:nowrap\">API<a name=\"obds-op-komplikation-cs-API\"> </a></td><td>Apoplektischer Insult</td></tr><tr><td style=\"white-space:nowrap\">BIF<a name=\"obds-op-komplikation-cs-BIF\"> </a></td><td>Biliäre Fistel</td></tr><tr><td style=\"white-space:nowrap\">BOG<a name=\"obds-op-komplikation-cs-BOG\"> </a></td><td>Blutung, obere gastrointestinale (z. B „Stressulkus“)</td></tr><tr><td style=\"white-space:nowrap\">BOE<a name=\"obds-op-komplikation-cs-BOE\"> </a></td><td>Bolusverlegung eines Endotubus</td></tr><tr><td style=\"white-space:nowrap\">BSI<a name=\"obds-op-komplikation-cs-BSI\"> </a></td><td>Bronchusstumpfinsuffizienz</td></tr><tr><td style=\"white-space:nowrap\">CHI<a name=\"obds-op-komplikation-cs-CHI\"> </a></td><td>Cholangitis</td></tr><tr><td style=\"white-space:nowrap\">DAI<a name=\"obds-op-komplikation-cs-DAI\"> </a></td><td>Darmanastomoseninsuffizienz</td></tr><tr><td style=\"white-space:nowrap\">DPS<a name=\"obds-op-komplikation-cs-DPS\"> </a></td><td>Darmpassagestörungen (z. B. protrahierte Atonie, Subileus, Ileus)</td></tr><tr><td style=\"white-space:nowrap\">DIC<a name=\"obds-op-komplikation-cs-DIC\"> </a></td><td>Disseminierte intravasale Koagulopathie</td></tr><tr><td style=\"white-space:nowrap\">DEP<a name=\"obds-op-komplikation-cs-DEP\"> </a></td><td>Drogenentzugspsychose</td></tr><tr><td style=\"white-space:nowrap\">DLU<a name=\"obds-op-komplikation-cs-DLU\"> </a></td><td>Druck- und Lagerungsschäden, z. B. Dekubitalulzera</td></tr><tr><td style=\"white-space:nowrap\">DSI<a name=\"obds-op-komplikation-cs-DSI\"> </a></td><td>Duodenalstumpfinsuffizienz</td></tr><tr><td style=\"white-space:nowrap\">ENF<a name=\"obds-op-komplikation-cs-ENF\"> </a></td><td>Enterale Fistel</td></tr><tr><td style=\"white-space:nowrap\">GER<a name=\"obds-op-komplikation-cs-GER\"> </a></td><td>Gerinnungsstörung</td></tr><tr><td style=\"white-space:nowrap\">HEM<a name=\"obds-op-komplikation-cs-HEM\"> </a></td><td>Hämatemesis</td></tr><tr><td style=\"white-space:nowrap\">HUR<a name=\"obds-op-komplikation-cs-HUR\"> </a></td><td>Hämaturie</td></tr><tr><td style=\"white-space:nowrap\">HAE<a name=\"obds-op-komplikation-cs-HAE\"> </a></td><td>Hämorrhagischer Schock</td></tr><tr><td style=\"white-space:nowrap\">HFI<a name=\"obds-op-komplikation-cs-HFI\"> </a></td><td>Harnfistel</td></tr><tr><td style=\"white-space:nowrap\">HNK<a name=\"obds-op-komplikation-cs-HNK\"> </a></td><td>Hautnekrose im Operationsbereich</td></tr><tr><td style=\"white-space:nowrap\">HZI<a name=\"obds-op-komplikation-cs-HZI\"> </a></td><td>Herzinsuffizienz</td></tr><tr><td style=\"white-space:nowrap\">HRS<a name=\"obds-op-komplikation-cs-HRS\"> </a></td><td>Herzrhythmusstörungen</td></tr><tr><td style=\"white-space:nowrap\">HNA<a name=\"obds-op-komplikation-cs-HNA\"> </a></td><td>Hirnnervenausfälle</td></tr><tr><td style=\"white-space:nowrap\">HOP<a name=\"obds-op-komplikation-cs-HOP\"> </a></td><td>Hirnorganisches Psychosyndrom (z. B. „Durchgangssyndrom“)</td></tr><tr><td style=\"white-space:nowrap\">HYB<a name=\"obds-op-komplikation-cs-HYB\"> </a></td><td>Hyperbilirubinämie</td></tr><tr><td style=\"white-space:nowrap\">HYF<a name=\"obds-op-komplikation-cs-HYF\"> </a></td><td>Hypopharynxfistel</td></tr><tr><td style=\"white-space:nowrap\">IFV<a name=\"obds-op-komplikation-cs-IFV\"> </a></td><td>Ileofemorale Venenthrombose</td></tr><tr><td style=\"white-space:nowrap\">KAS<a name=\"obds-op-komplikation-cs-KAS\"> </a></td><td>Kardiogener Schock</td></tr><tr><td style=\"white-space:nowrap\">KES<a name=\"obds-op-komplikation-cs-KES\"> </a></td><td>Komplikationen einer Stomaanlage</td></tr><tr><td style=\"white-space:nowrap\">KIM<a name=\"obds-op-komplikation-cs-KIM\"> </a></td><td>Komplikation eines Implantates (Gefäßprothese, Totalendoprothese, Katheter), z. B. Dislokation</td></tr><tr><td style=\"white-space:nowrap\">KRA<a name=\"obds-op-komplikation-cs-KRA\"> </a></td><td>Krampfanfall</td></tr><tr><td style=\"white-space:nowrap\">KDS<a name=\"obds-op-komplikation-cs-KDS\"> </a></td><td>Kurzdarmsyndrom</td></tr><tr><td style=\"white-space:nowrap\">LEV<a name=\"obds-op-komplikation-cs-LEV\"> </a></td><td>Leberversagen</td></tr><tr><td style=\"white-space:nowrap\">LOE<a name=\"obds-op-komplikation-cs-LOE\"> </a></td><td>Lungenödem</td></tr><tr><td style=\"white-space:nowrap\">LYF<a name=\"obds-op-komplikation-cs-LYF\"> </a></td><td>Lymphfistel</td></tr><tr><td style=\"white-space:nowrap\">LYE<a name=\"obds-op-komplikation-cs-LYE\"> </a></td><td>Lymphozele</td></tr><tr><td style=\"white-space:nowrap\">MES<a name=\"obds-op-komplikation-cs-MES\"> </a></td><td>Magenentleerungsstörung</td></tr><tr><td style=\"white-space:nowrap\">MIL<a name=\"obds-op-komplikation-cs-MIL\"> </a></td><td>Mechanischer Ileus</td></tr><tr><td style=\"white-space:nowrap\">MED<a name=\"obds-op-komplikation-cs-MED\"> </a></td><td>Mediastinitis</td></tr><tr><td style=\"white-space:nowrap\">MAT<a name=\"obds-op-komplikation-cs-MAT\"> </a></td><td>Mesenterialarterien- oder -venenthrombose</td></tr><tr><td style=\"white-space:nowrap\">MYI<a name=\"obds-op-komplikation-cs-MYI\"> </a></td><td>Myokardinfarkt</td></tr><tr><td style=\"white-space:nowrap\">RNB<a name=\"obds-op-komplikation-cs-RNB\"> </a></td><td>Nachblutung, revisionsbedürftig, anderweitig nicht erwähnt</td></tr><tr><td style=\"white-space:nowrap\">NAB<a name=\"obds-op-komplikation-cs-NAB\"> </a></td><td>Nachblutung, nicht revisionsbedürftig, anderweitig nicht erwähnt</td></tr><tr><td style=\"white-space:nowrap\">NIN<a name=\"obds-op-komplikation-cs-NIN\"> </a></td><td>Nahtinsuffizienz, anderweitig nicht erwähnt</td></tr><tr><td style=\"white-space:nowrap\">OES<a name=\"obds-op-komplikation-cs-OES\"> </a></td><td>Ösophagitis</td></tr><tr><td style=\"white-space:nowrap\">OSM<a name=\"obds-op-komplikation-cs-OSM\"> </a></td><td>Osteitis, Osteomyelitis</td></tr><tr><td style=\"white-space:nowrap\">PAF<a name=\"obds-op-komplikation-cs-PAF\"> </a></td><td>Pankreasfistel</td></tr><tr><td style=\"white-space:nowrap\">PIT<a name=\"obds-op-komplikation-cs-PIT\"> </a></td><td>Pankreatitis</td></tr><tr><td style=\"white-space:nowrap\">PAB<a name=\"obds-op-komplikation-cs-PAB\"> </a></td><td>Peranale Blutung</td></tr><tr><td style=\"white-space:nowrap\">PPA<a name=\"obds-op-komplikation-cs-PPA\"> </a></td><td>Periphere Parese</td></tr><tr><td style=\"white-space:nowrap\">PAV<a name=\"obds-op-komplikation-cs-PAV\"> </a></td><td>Peripherer arterieller Verschluss (Embolie, Thrombose)</td></tr><tr><td style=\"white-space:nowrap\">PER<a name=\"obds-op-komplikation-cs-PER\"> </a></td><td>Peritonitis</td></tr><tr><td style=\"white-space:nowrap\">PLB<a name=\"obds-op-komplikation-cs-PLB\"> </a></td><td>Platzbauch</td></tr><tr><td style=\"white-space:nowrap\">PEY<a name=\"obds-op-komplikation-cs-PEY\"> </a></td><td>Pleuraempyem</td></tr><tr><td style=\"white-space:nowrap\">PLE<a name=\"obds-op-komplikation-cs-PLE\"> </a></td><td>Pleuraerguss</td></tr><tr><td style=\"white-space:nowrap\">PMN<a name=\"obds-op-komplikation-cs-PMN\"> </a></td><td>Pneumonie</td></tr><tr><td style=\"white-space:nowrap\">PNT<a name=\"obds-op-komplikation-cs-PNT\"> </a></td><td>Pneumothorax</td></tr><tr><td style=\"white-space:nowrap\">PDA<a name=\"obds-op-komplikation-cs-PDA\"> </a></td><td>Protrahierte Darmatonie (paralytischer Ileus)</td></tr><tr><td style=\"white-space:nowrap\">PAE<a name=\"obds-op-komplikation-cs-PAE\"> </a></td><td>Pulmonalarterienembolie</td></tr><tr><td style=\"white-space:nowrap\">RPA<a name=\"obds-op-komplikation-cs-RPA\"> </a></td><td>Rekurrensparese</td></tr><tr><td style=\"white-space:nowrap\">RIN<a name=\"obds-op-komplikation-cs-RIN\"> </a></td><td>Respiratorische Insuffizienz</td></tr><tr><td style=\"white-space:nowrap\">SKI<a name=\"obds-op-komplikation-cs-SKI\"> </a></td><td>Septische Komplikation eines Implantates</td></tr><tr><td style=\"white-space:nowrap\">SES<a name=\"obds-op-komplikation-cs-SES\"> </a></td><td>Septischer Schock</td></tr><tr><td style=\"white-space:nowrap\">SFH<a name=\"obds-op-komplikation-cs-SFH\"> </a></td><td>Störungen des Flüssigkeits-, Elektrolyt- und Säurebasenhaushaltes</td></tr><tr><td style=\"white-space:nowrap\">STK<a name=\"obds-op-komplikation-cs-STK\"> </a></td><td>Stomakomplikation (z. B. Blutung, Nekrose, Stenose)</td></tr><tr><td style=\"white-space:nowrap\">TZP<a name=\"obds-op-komplikation-cs-TZP\"> </a></td><td>Thrombozytopenie</td></tr><tr><td style=\"white-space:nowrap\">TIA<a name=\"obds-op-komplikation-cs-TIA\"> </a></td><td>(transitorische ischämische Attacke) oder Rind (reversibles ischämisches neurologisches Defizit)</td></tr><tr><td style=\"white-space:nowrap\">TRZ<a name=\"obds-op-komplikation-cs-TRZ\"> </a></td><td>Transfusionszwischenfall</td></tr><tr><td style=\"white-space:nowrap\">WUH<a name=\"obds-op-komplikation-cs-WUH\"> </a></td><td>Wundhämatom (konservativ therapiert)</td></tr><tr><td style=\"white-space:nowrap\">WSS<a name=\"obds-op-komplikation-cs-WSS\"> </a></td><td>Wundheilungsstörung, subkutane</td></tr></table></div>"
+  },
+  "url" : "http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/obds-op-komplikation-cs",
+  "version" : "0.1.0",
+  "name" : "ObdsOpKomplikationCS",
+  "title" : "oBDS Operation Komplikation Codesystem",
+  "status" : "draft",
+  "date" : "2024-02-29T07:33:51+00:00",
+  "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+  "contact" : [{
+    "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.krebsregister-rlp.de/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@krebsregister-rlp.de"
+    }]
+  }],
+  "description" : "Komplikation gemäß Vorgabe oBDS.",
+  "content" : "complete",
+  "count" : 79,
+  "concept" : [{
+    "code" : "N",
+    "display" : "nein"
+  },
+  {
+    "code" : "U",
+    "display" : "unbekannt"
+  },
+  {
+    "code" : "ABD",
+    "display" : "Abszess in einem Drainagekanal"
+  },
+  {
+    "code" : "ABS",
+    "display" : "Abszess, intraabdominaler oder intrathorakaler"
+  },
+  {
+    "code" : "ASF",
+    "display" : "Abszess, subfaszialer"
+  },
+  {
+    "code" : "ANI",
+    "display" : "Akute Niereninsuffizienz"
+  },
+  {
+    "code" : "AEP",
+    "display" : "Alkoholentzugspsychose"
+  },
+  {
+    "code" : "ALR",
+    "display" : "Allergische Reaktion ohne Schocksymptomatik"
+  },
+  {
+    "code" : "ANS",
+    "display" : "Anaphylaktischer Schock"
+  },
+  {
+    "code" : "AEE",
+    "display" : "Anastomoseninsuffizienz einer Enterostomie"
+  },
+  {
+    "code" : "API",
+    "display" : "Apoplektischer Insult"
+  },
+  {
+    "code" : "BIF",
+    "display" : "Biliäre Fistel"
+  },
+  {
+    "code" : "BOG",
+    "display" : "Blutung, obere gastrointestinale (z. B „Stressulkus“)"
+  },
+  {
+    "code" : "BOE",
+    "display" : "Bolusverlegung eines Endotubus"
+  },
+  {
+    "code" : "BSI",
+    "display" : "Bronchusstumpfinsuffizienz"
+  },
+  {
+    "code" : "CHI",
+    "display" : "Cholangitis"
+  },
+  {
+    "code" : "DAI",
+    "display" : "Darmanastomoseninsuffizienz"
+  },
+  {
+    "code" : "DPS",
+    "display" : "Darmpassagestörungen (z. B. protrahierte Atonie, Subileus, Ileus)"
+  },
+  {
+    "code" : "DIC",
+    "display" : "Disseminierte intravasale Koagulopathie"
+  },
+  {
+    "code" : "DEP",
+    "display" : "Drogenentzugspsychose"
+  },
+  {
+    "code" : "DLU",
+    "display" : "Druck- und Lagerungsschäden, z. B. Dekubitalulzera"
+  },
+  {
+    "code" : "DSI",
+    "display" : "Duodenalstumpfinsuffizienz"
+  },
+  {
+    "code" : "ENF",
+    "display" : "Enterale Fistel"
+  },
+  {
+    "code" : "GER",
+    "display" : "Gerinnungsstörung"
+  },
+  {
+    "code" : "HEM",
+    "display" : "Hämatemesis"
+  },
+  {
+    "code" : "HUR",
+    "display" : "Hämaturie"
+  },
+  {
+    "code" : "HAE",
+    "display" : "Hämorrhagischer Schock"
+  },
+  {
+    "code" : "HFI",
+    "display" : "Harnfistel"
+  },
+  {
+    "code" : "HNK",
+    "display" : "Hautnekrose im Operationsbereich"
+  },
+  {
+    "code" : "HZI",
+    "display" : "Herzinsuffizienz"
+  },
+  {
+    "code" : "HRS",
+    "display" : "Herzrhythmusstörungen"
+  },
+  {
+    "code" : "HNA",
+    "display" : "Hirnnervenausfälle"
+  },
+  {
+    "code" : "HOP",
+    "display" : "Hirnorganisches Psychosyndrom (z. B. „Durchgangssyndrom“)"
+  },
+  {
+    "code" : "HYB",
+    "display" : "Hyperbilirubinämie"
+  },
+  {
+    "code" : "HYF",
+    "display" : "Hypopharynxfistel"
+  },
+  {
+    "code" : "IFV",
+    "display" : "Ileofemorale Venenthrombose"
+  },
+  {
+    "code" : "KAS",
+    "display" : "Kardiogener Schock"
+  },
+  {
+    "code" : "KES",
+    "display" : "Komplikationen einer Stomaanlage"
+  },
+  {
+    "code" : "KIM",
+    "display" : "Komplikation eines Implantates (Gefäßprothese, Totalendoprothese, Katheter), z. B. Dislokation"
+  },
+  {
+    "code" : "KRA",
+    "display" : "Krampfanfall"
+  },
+  {
+    "code" : "KDS",
+    "display" : "Kurzdarmsyndrom"
+  },
+  {
+    "code" : "LEV",
+    "display" : "Leberversagen"
+  },
+  {
+    "code" : "LOE",
+    "display" : "Lungenödem"
+  },
+  {
+    "code" : "LYF",
+    "display" : "Lymphfistel"
+  },
+  {
+    "code" : "LYE",
+    "display" : "Lymphozele"
+  },
+  {
+    "code" : "MES",
+    "display" : "Magenentleerungsstörung"
+  },
+  {
+    "code" : "MIL",
+    "display" : "Mechanischer Ileus"
+  },
+  {
+    "code" : "MED",
+    "display" : "Mediastinitis"
+  },
+  {
+    "code" : "MAT",
+    "display" : "Mesenterialarterien- oder -venenthrombose"
+  },
+  {
+    "code" : "MYI",
+    "display" : "Myokardinfarkt"
+  },
+  {
+    "code" : "RNB",
+    "display" : "Nachblutung, revisionsbedürftig, anderweitig nicht erwähnt"
+  },
+  {
+    "code" : "NAB",
+    "display" : "Nachblutung, nicht revisionsbedürftig, anderweitig nicht erwähnt"
+  },
+  {
+    "code" : "NIN",
+    "display" : "Nahtinsuffizienz, anderweitig nicht erwähnt"
+  },
+  {
+    "code" : "OES",
+    "display" : "Ösophagitis"
+  },
+  {
+    "code" : "OSM",
+    "display" : "Osteitis, Osteomyelitis"
+  },
+  {
+    "code" : "PAF",
+    "display" : "Pankreasfistel"
+  },
+  {
+    "code" : "PIT",
+    "display" : "Pankreatitis"
+  },
+  {
+    "code" : "PAB",
+    "display" : "Peranale Blutung"
+  },
+  {
+    "code" : "PPA",
+    "display" : "Periphere Parese"
+  },
+  {
+    "code" : "PAV",
+    "display" : "Peripherer arterieller Verschluss (Embolie, Thrombose)"
+  },
+  {
+    "code" : "PER",
+    "display" : "Peritonitis"
+  },
+  {
+    "code" : "PLB",
+    "display" : "Platzbauch"
+  },
+  {
+    "code" : "PEY",
+    "display" : "Pleuraempyem"
+  },
+  {
+    "code" : "PLE",
+    "display" : "Pleuraerguss"
+  },
+  {
+    "code" : "PMN",
+    "display" : "Pneumonie"
+  },
+  {
+    "code" : "PNT",
+    "display" : "Pneumothorax"
+  },
+  {
+    "code" : "PDA",
+    "display" : "Protrahierte Darmatonie (paralytischer Ileus)"
+  },
+  {
+    "code" : "PAE",
+    "display" : "Pulmonalarterienembolie"
+  },
+  {
+    "code" : "RPA",
+    "display" : "Rekurrensparese"
+  },
+  {
+    "code" : "RIN",
+    "display" : "Respiratorische Insuffizienz"
+  },
+  {
+    "code" : "SKI",
+    "display" : "Septische Komplikation eines Implantates"
+  },
+  {
+    "code" : "SES",
+    "display" : "Septischer Schock"
+  },
+  {
+    "code" : "SFH",
+    "display" : "Störungen des Flüssigkeits-, Elektrolyt- und Säurebasenhaushaltes"
+  },
+  {
+    "code" : "STK",
+    "display" : "Stomakomplikation (z. B. Blutung, Nekrose, Stenose)"
+  },
+  {
+    "code" : "TZP",
+    "display" : "Thrombozytopenie"
+  },
+  {
+    "code" : "TIA",
+    "display" : "(transitorische ischämische Attacke) oder Rind (reversibles ischämisches neurologisches Defizit)"
+  },
+  {
+    "code" : "TRZ",
+    "display" : "Transfusionszwischenfall"
+  },
+  {
+    "code" : "WUH",
+    "display" : "Wundhämatom (konservativ therapiert)"
+  },
+  {
+    "code" : "WSS",
+    "display" : "Wundheilungsstörung, subkutane"
+  }]
+}

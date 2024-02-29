@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cancer-staging-type-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  371508000 (Tumor stage (observable entity))</li></ul></div>
+  </text>
+  <url value="http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-staging-type-vs"/>
+  <version value="0.1.0"/>
+  <name value="CancerStagingTypeVS"/>
+  <title value="Cancer Staging Type Value Set"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-02-29T07:33:51+00:00"/>
+  <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+  <contact>
+    <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.krebsregister-rlp.de/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@krebsregister-rlp.de"/>
+    </telecom>
+  </contact>
+  <description value="Identifying codes for the type of cancer staging performed. In terms of the SNOMED CT hierarchy, these codes represent observables."/>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="371508000"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

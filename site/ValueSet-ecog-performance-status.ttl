@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/ecog-performance-status> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ecog-performance-status"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA9622-7/\">LA9622-7</a></td><td>ECOG 0 (Normale, uneingeschränkte Aktivität wie vor der Erkrankung)</td></tr><tr><td><a href=\"https://loinc.org/LA9623-5/\">LA9623-5</a></td><td>ECOG 1: (Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen)</td></tr><tr><td><a href=\"https://loinc.org/LA9624-3/\">LA9624-3</a></td><td>ECOG 2: (Gehfähig, Selbstversorgung möglich, aber nicht arbeitsfähig; kann mehr als 50% der Wachzeit aufstehen)</td></tr><tr><td><a href=\"https://loinc.org/LA9625-0/\">LA9625-0</a></td><td>ECOG 3: (Nur begrenzte Selbstversorgung möglich; ist 50% oder mehr der Wachzeit an Bett oder Stuhl gebunden)</td></tr><tr><td><a href=\"https://loinc.org/LA9626-8/\">LA9626-8</a></td><td>ECOG 4: (Völlig pflegebedürftig, keinerlei Selbstversorgung möglich; völlig an Bett oder Stuhl gebunden)</td></tr><tr><td><a href=\"https://loinc.org/LA9627-6/\">LA9627-6</a></td><td>ECOG 5: (Tod)</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://loinc.org/vs/LL529-9"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ECOGPerformanceStatusVS"] ; # 
+  fhir:title [ fhir:v "ECOG"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-02-29T07:33:51+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.krebsregister-rlp.de/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@krebsregister-rlp.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ECOG Performance Status (Level 0-5)."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA9622-7" ] ;
+         fhir:display [ fhir:v "ECOG 0 (Normale, uneingeschränkte Aktivität wie vor der Erkrankung)" ]
+       ] [
+         fhir:code [ fhir:v "LA9623-5" ] ;
+         fhir:display [ fhir:v "ECOG 1: (Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen)" ]
+       ] [
+         fhir:code [ fhir:v "LA9624-3" ] ;
+         fhir:display [ fhir:v "ECOG 2: (Gehfähig, Selbstversorgung möglich, aber nicht arbeitsfähig; kann mehr als 50% der Wachzeit aufstehen)" ]
+       ] [
+         fhir:code [ fhir:v "LA9625-0" ] ;
+         fhir:display [ fhir:v "ECOG 3: (Nur begrenzte Selbstversorgung möglich; ist 50% oder mehr der Wachzeit an Bett oder Stuhl gebunden)" ]
+       ] [
+         fhir:code [ fhir:v "LA9626-8" ] ;
+         fhir:display [ fhir:v "ECOG 4: (Völlig pflegebedürftig, keinerlei Selbstversorgung möglich; völlig an Bett oder Stuhl gebunden)" ]
+       ] [
+         fhir:code [ fhir:v "LA9627-6" ] ;
+         fhir:display [ fhir:v "ECOG 5: (Tod)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

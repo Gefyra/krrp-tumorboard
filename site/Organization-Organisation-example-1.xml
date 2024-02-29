@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="Organisation-example-1"/>
+  <meta>
+    <profile value="http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Organisation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="Organisation-example-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;Organisation-example-1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Organisation.html">Organisation</a></p></div><p><b>name</b>: Klinikum Musterhausen</p><p><b>address</b>: Beispielpfad 5-9 Musterhausen 12456 </p></div>
+  </text>
+  <name value="Klinikum Musterhausen"/>
+  <address>
+    <line value="Beispielpfad 5-9"/>
+    <city value="Musterhausen"/>
+    <postalCode value="12456"/>
+  </address>
+</Organization>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tnm-distant-metastases-category-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222587001 (American Joint Committee on Cancer clinical M category allowable value (qualifier value))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222591006 (American Joint Committee on Cancer pathological M category allowable value (qualifier value))</li></ul></div>
+  </text>
+  <url value="http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-distant-metastases-category-vs"/>
+  <version value="0.1.0"/>
+  <name value="TNMDistantMetastasesCategoryVS"/>
+  <title value="TNM Distant Metastases Category Value Set"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-02-29T07:33:51+00:00"/>
+  <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+  <contact>
+    <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.krebsregister-rlp.de/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@krebsregister-rlp.de"/>
+    </telecom>
+  </contact>
+  <description value="Result values for M category. This value set contains SNOMED-CT equivalents of UICC codes for the M category, according to TNM staging rules."/>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="1222587001"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="1222591006"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

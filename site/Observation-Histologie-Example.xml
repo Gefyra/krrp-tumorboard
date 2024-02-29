@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Histologie-Example"/>
+  <meta>
+    <profile value="http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/histologie"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Histologie-Example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Histologie-Example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-histologie.html">Histologie</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Freitext <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html">International Classification of Diseases for Oncology, version 3.</a>; <a href="https://loinc.org/">LOINC</a>#59847-4)</span></p><p><b>subject</b>: <a href="Patient-TumorPatient-example-1.html">Patient/TumorPatient-example-1</a> &quot; MUSTERMANN&quot;</p><p><b>focus</b>: <a href="Specimen-Tumor-Example.html">Specimen/Tumor-Example</a></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/icd-o-3"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="59847-4"/>
+    </coding>
+    <text value="Freitext"/>
+  </code>
+  <subject>
+    <reference value="Patient/TumorPatient-example-1"/>
+  </subject>
+  <focus>
+    <reference value="Specimen/Tumor-Example"/>
+  </focus>
+</Observation>

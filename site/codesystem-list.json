@@ -1,0 +1,20 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/HistoGrade",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HistoGrade",
+      "title" : "Histopathologische Grading Codes",
+      "description" : "Die histopathologische Einstufung des invasiven Karzinoms "
+    },
+    {
+      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/obds-op-komplikation-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ObdsOpKomplikationCS",
+      "title" : "oBDS Operation Komplikation Codesystem",
+      "description" : "Komplikation gemäß Vorgabe oBDS."
+    }
+  ]
+}

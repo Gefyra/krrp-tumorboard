@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="OperationEinzelprozedurExample"/>
+  <meta>
+    <profile value="http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation-einzelprozedur"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Procedure</b><a name="OperationEinzelprozedurExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Procedure &quot;OperationEinzelprozedurExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-operation-einzelprozedur.html">Operation Einzelprozedur</a></p></div><p><b>partOf</b>: <a href="Procedure-OperationExample.html">Procedure/OperationExample</a></p><p><b>status</b>: completed</p><p><b>code</b>: 5-123.4 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (OPS[2023]#5-123.4)</span></p><p><b>subject</b>: <a href="Patient-TumorPatient-example-1.html">Patient/TumorPatient-example-1</a> &quot; MUSTERMANN&quot;</p><p><b>performed</b>: 2023-04-01</p></div>
+  </text>
+  <partOf>
+    <reference value="Procedure/OperationExample"/>
+  </partOf>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/bfarm/ops"/>
+      <version value="2023"/>
+      <code value="5-123.4"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/TumorPatient-example-1"/>
+  </subject>
+  <performedDateTime value="2023-04-01"/>
+</Procedure>

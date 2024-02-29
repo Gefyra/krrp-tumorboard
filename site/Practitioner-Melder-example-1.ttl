@@ -1,0 +1,33 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://krebsregister-rlp.de/fhir/tumorboard/Practitioner/Melder-example-1> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Melder-example-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Melder"^^xsd:anyURI ;
+       fhir:link <http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Melder>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"Melder-example-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;Melder-example-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Melder.html\">Melder</a></p></div><p><b>name</b>: Dr. Herbert Hundertschön</p><p><b>telecom</b>: ph: 012233-555-667, <a href=\"mailto:hh@klinikum-musterhausen.de\">hh@klinikum-musterhausen.de</a></p></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "Dr. Herbert Hundertschön" ]
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "012233-555-667" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "hh@klinikum-musterhausen.de" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ECOGExample",
+  "meta" : {
+    "profile" : ["http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/ecog"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ECOGExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ECOGExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ecog.html\">ECOG</a></p></div><p><b>Episode of Care</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Tumorerkrankung\">Tumorerkrankung</a></p><p><b>status</b>: final</p><p><b>code</b>: ECOG Performance Status score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#89247-1)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Beispielpatient\">Beispielpatient</a></p><p><b>value</b>: ECOG 1: (Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA9623-5)</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+    "valueReference" : {
+      "reference" : "Tumorerkrankung"
+    }
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "89247-1",
+      "display" : "ECOG Performance Status score"
+    }]
+  },
+  "subject" : {
+    "reference" : "Beispielpatient"
+  },
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "LA9623-5",
+      "display" : "ECOG 1: (Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen)"
+    }]
+  }
+}
